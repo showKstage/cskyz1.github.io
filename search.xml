@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[XTU 1308 比赛]]></title>
+    <url>%2F2019%2F07%2F19%2FXTU-1308-%E6%AF%94%E8%B5%9B%2F</url>
+    <content type="text"><![CDATA[题目描述有n个人要进行比赛，比赛规则如下：假设每轮比赛的人是m，取最大的k，k=2t且k≤m。这k个人每2人举行一场比赛，胜利者进入一下轮，失败者被淘汰。余下的m-k个人，不进行比赛，直接进入下一轮直到决出冠军，比赛结束。比如有5个人参加比赛，第一轮举办2场，剩余3人进入第二轮，第二轮1场，剩余2人进入第三轮，第三轮举办1场决出冠军，所以一共要办4场比赛。 请问一共要举行几轮多少场比赛？ 输入第一行是一个整数K，表示样例的个数。 以后每行一个样例，为n(1≤n≤1000000000) 输出每行输出两个整数，轮数和比赛场数，中间用一个空格隔开。 样例输入2 1 5 样例输出0 0 3 4 思路：直接按题意模拟即可 1234567891011121314151617181920212223242526#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;int main() &#123; int T; scanf("%d", &amp;T); while (T--) &#123; ll n; scanf("%I64d", &amp;n); ll lun = 0, chang = 0; while (n &gt; 1) &#123; ll k = 1; while (k &lt;= n) &#123; //求k if (k * 2 &gt; n) break; k *= 2; &#125; n -= k; k /= 2; //场次 chang += k; lun++; n += k; &#125; printf("%I64d %I64d\n", lun, chang); &#125; system("pause");&#125;]]></content>
+      <categories>
+        <category>程序设计实践</category>
+      </categories>
+      <tags>
+        <tag>模拟</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[XTU 1296 GCD]]></title>
     <url>%2F2019%2F07%2F19%2FXTU-1296-GCD%2F</url>
     <content type="text"><![CDATA[题目描述a和b的最大公约数(Greatest Common Divisor)是最大的d，d能整除a和b。如果gcd(a,b)=1，我们就称a和b是互素的。 给一个区间[a,b]，求与6互素的数的个数。比如区间[1,10],与6互素的数为1,5,7,所以一共是3个。 输入第一行是一个整数K(K≤10,000)，表示样例的个数。每个样例占一行,为区间[a,b],(1≤a≤b≤1,000,000,000) 输出每行输出一个样例的结果 样例输入21 101 1000000000 样例输出3333333333 思路：容斥，与6互素就不会有和6一样的因子2,3，所以[l,r]区间的数减去2和3的倍数再加上6的倍数(计算2和3的倍数时多减了一次)即为答案，另外对于大数判断倍数遍历判断是肯定会超时的，有个思路就是就是 1 到 n 有多少个是 m 倍数，个数为 n/m。 1234567891011121314151617#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;ll a, b;int main() &#123; int k; scanf("%d", &amp;k); while (k--) &#123; scanf("%lld%lld", &amp;a, &amp;b); ll l = (b * 1.0 / 2) - (a - 1) * 1.0 / 2; ll r = (b * 1.0) / 3 - (a - 1) * 1.0 / 3; ll lr = b - a + 1; ll sum = (b * 1.0) / 6 - (a - 1) * 1.0 / 6; sum = lr - l - r + sum; printf("%lld\n", sum); &#125;&#125;]]></content>
