@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PAT 1039 到底买不买]]></title>
+    <url>%2F2019%2F07%2F19%2FPAT-1039-%E5%88%B0%E5%BA%95%E4%B9%B0%E4%B8%8D%E4%B9%B0%2F</url>
+    <content type="text"><![CDATA[题目小红想买些珠子做一串自己喜欢的珠串。卖珠子的摊主有很多串五颜六色的珠串，但是不肯把任何一串拆散了卖。于是小红要你帮忙判断一下，某串珠子里是否包含了全部自己想要的珠子？如果是，那么告诉她有多少多余的珠子；如果不是，那么告诉她缺了多少珠子。 为方便起见，我们用[0-9]、[a-z]、[A-Z]范围内的字符来表示颜色。例如在图1中，第3串是小红想做的珠串；那么第1串可以买，因为包含了全部她想要的珠子，还多了8颗不需要的珠子；第2串不能买，因为没有黑色珠子，并且少了一颗红色的珠子。 输入格式：每个输入包含 1 个测试用例。每个测试用例分别在 2 行中先后给出摊主的珠串和小红想做的珠串，两串都不超过 1000 个珠子。 输出格式：如果可以买，则在一行中输出 Yes 以及有多少多余的珠子；如果不可以买，则在一行中输出 No 以及缺了多少珠子。其间以 1 个空格分隔。 输入样例 1：ppRYYGrrYBR2258YrR8RrY 输出样例 1：Yes 8 输入样例 2：ppRYYGrrYB225YrR8RrY 输出样例 2：No 2 思路：用两个数组分别存储摊主的珠串的个数以及小红想做的珠串的个数，我这里是把[0-9]、[a-z]、[A-Z]都转成数字，方便用数组统计，之后判断如果man[i]&gt;shop[i]，那么就是no，缺少的个数是sum += man[i] + shop[i]，反之若是yes，多余的个数就是sum += shop[i] - man[i]。 1234567891011121314151617181920212223242526272829303132333435363738#include &lt;bits/stdc++.h&gt;using namespace std;int shop[65], man[65];int main() &#123; string s1, s2; cin &gt;&gt; s1 &gt;&gt; s2; bool ok = true; for (int i = 0; i &lt; s1.length(); ++i) &#123; if (s1[i] &lt;= 'z' &amp;&amp; s1[i] &gt;= 'a') shop[s1[i] - 'a' + 10]++; else if (s1[i] &lt;= 'Z' &amp;&amp; s1[i] &gt;= 'A') shop[s1[i] - 'A' + 36]++; else shop[s1[i] - '0']++; &#125; for (int i = 0; i &lt; s2.length(); ++i) &#123; if (s2[i] &lt;= 'z' &amp;&amp; s2[i] &gt;= 'a') man[s2[i] - 'a' + 10]++; else if (s2[i] &lt;= 'Z' &amp;&amp; s2[i] &gt;= 'A') man[s2[i] - 'A' + 36]++; else man[s2[i] - '0']++; &#125; int sum = 0; for (int i = 0; i &lt; 62; ++i) &#123; if (man[i] &gt; shop[i]) ok = false; &#125; if (ok) &#123; for (int i = 0; i &lt; 62; ++i) sum += shop[i] - man[i]; cout &lt;&lt; "Yes " &lt;&lt; sum &lt;&lt; endl; &#125; else &#123; for (int i = 0; i &lt; 62; ++i) &#123; if (shop[i] &lt; man[i]) sum += man[i] - shop[i]; &#125; cout &lt;&lt; "No " &lt;&lt; sum &lt;&lt; endl; &#125; system("pause");&#125;]]></content>
+      <categories>
+        <category>PAT</category>
+      </categories>
+      <tags>
+        <tag>模拟</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[XTU 1271 Color]]></title>
     <url>%2F2019%2F07%2F19%2FXTU-1271-Color%2F</url>
     <content type="text"><![CDATA[原题链接 http://202.197.224.59/exam/index.php/problem/read/id/1271 题目Alice在玩一个游戏，她在一个m×n的格子里，随机涂黑k个格子。然后她每次可以把一行或者一列的格子染成红色，但是这一行中不能有黑色的格子。 请问她最多能把多少个格子涂成红色？ 输入第一行是一个整数T(T≤100)，表示样例的个数。 每个样例的第一行是m(1≤m≤100),n(1≤n≤100),k(0≤k≤m×n)。 以后的k行,每行两个整数x(1≤x≤m),y(1≤y≤n)，表示(x,y)为黑色格子。 输出每行输出一个样例的结果。 样例输入1 3 4 2 1 1 3 3 样例输出8 思路：首先根据x y统计有哪几行哪几列有黑色格子，用row和col数组存储，再对二者遍历可得全为红格子的行数以及红格子的列数，用r和c表示，那么我们可以推出公式ans = r * n + c * m - r * c; 1234567891011121314151617181920212223242526272829#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;string.h&gt;typedef long long ll;int row[105], col[105];int main() &#123; int T, m, n, k, x, y; scanf("%d", &amp;T); while (T--) &#123; memset(row, 0, sizeof(row)); memset(col, 0, sizeof(col)); scanf("%d%d%d", &amp;m, &amp;n, &amp;k); while (k--) &#123; scanf("%d%d", &amp;x, &amp;y); row[x - 1] = 1; col[y - 1] = 1; &#125; int r = 0, c = 0; for (int i = 0; i &lt; m; ++i) &#123; if (!row[i]) r++; &#125; for (int i = 0; i &lt; n; ++i) &#123; if (!col[i]) c++; &#125; ll ans = r * n + c * m - r * c; printf("%lld\n", ans); &#125; //system("pause");&#125;]]></content>
