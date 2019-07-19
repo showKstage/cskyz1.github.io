@@ -3,7 +3,13 @@
   <entry>
     <title><![CDATA[XTU 1271 Color]]></title>
     <url>%2F2019%2F07%2F19%2FXTU-1271-Color%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[ԭ������ http://202.197.224.59/exam/index.php/problem/read/id/1271 ��ĿAlice����һ����Ϸ������һ��m��n�ĸ�������Ϳ��k�����ӡ�Ȼ����ÿ�ο��԰�һ�л���һ�еĸ���Ⱦ�ɺ�ɫ��������һ���в����к�ɫ�ĸ��ӡ� ����������ܰѶ��ٸ�����Ϳ�ɺ�ɫ�� ������һ����һ������T(T��100)����ʾ�����ĸ����� ÿ�������ĵ�һ����m(1��m��100),n(1��n��100),k(0��k��m��n)�� �Ժ��k��,ÿ����������x(1��x��m),y(1��y��n)����ʾ(x,y)Ϊ��ɫ���ӡ� ���ÿ�����һ�������Ľ���� ��������1 3 4 2 1 1 3 3 �������8 ˼·�����ȸ���x yͳ�����ļ����ļ����к�ɫ���ӣ���row��col����洢���ٶԶ��߱����ɵ�ȫΪ����ӵ������Լ�����ӵ���������r��c��ʾ����ô���ǿ����Ƴ���ʽans = r * n + c * m - r * c; 1234567891011121314151617181920212223242526272829#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;string.h&gt;typedef long long ll;int row[105], col[105];int main() &#123; int T, m, n, k, x, y; scanf("%d", &amp;T); while (T--) &#123; memset(row, 0, sizeof(row)); memset(col, 0, sizeof(col)); scanf("%d%d%d", &amp;m, &amp;n, &amp;k); while (k--) &#123; scanf("%d%d", &amp;x, &amp;y); row[x - 1] = 1; col[y - 1] = 1; &#125; int r = 0, c = 0; for (int i = 0; i &lt; m; ++i) &#123; if (!row[i]) r++; &#125; for (int i = 0; i &lt; n; ++i) &#123; if (!col[i]) c++; &#125; ll ans = r * n + c * m - r * c; printf("%lld\n", ans); &#125; //system("pause");&#125;]]></content>
+      <categories>
+        <category>�������ʵ��</category>
+      </categories>
+      <tags>
+        <tag>��ѧ</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[PAT 1039]]></title>
