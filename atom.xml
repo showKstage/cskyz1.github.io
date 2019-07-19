@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>showKstage&#39;s Blog</title>
+  
+  <subtitle>Mind Control</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
+  <updated>2019-07-19T03:08:37.812Z</updated>
+  <id>https://github.com/showKstage/showKstage.github.io.git/</id>
+  
+  <author>
+    <name>showKstage</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My First Post</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/My-First-Post/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/My-First-Post/</id>
+    <published>2019-07-19T03:08:04.000Z</published>
+    <updated>2019-07-19T03:08:37.812Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;My First
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/hello-world/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/hello-world/</id>
+    <published>2019-07-19T03:05:35.944Z</published>
+    <updated>2019-07-19T03:05:35.944Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
