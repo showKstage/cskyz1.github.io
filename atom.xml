@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-07-19T07:49:10.787Z</updated>
+  <updated>2019-07-19T08:15:21.074Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安卓入门学习笔记</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/%E5%AE%89%E5%8D%93%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/安卓入门学习笔记/</id>
+    <published>2019-07-19T07:52:41.000Z</published>
+    <updated>2019-07-19T08:15:21.074Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;JDK-android-studio安装&quot;&gt;&lt;a href=&quot;#JDK-android-studio安装&quot; class=&quot;headerlink&quot; title=&quot;JDK + android studio安装&quot;&gt;&lt;/a&gt;JDK + android studio安装&lt;/h2&gt;&lt;p&gt;JDK和环境变量的配置；最新的android studio要求至少JDK1.8以上&lt;br&gt;去官网下载最新版本的android studio；&lt;br&gt;SDK可以下载android studio之后去settings里下载；&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="安卓学习" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E5%AE%89%E5%8D%93%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="安卓" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%AE%89%E5%8D%93/"/>
+    
+  </entry>
   
   <entry>
     <title>XTU 1308 比赛</title>
