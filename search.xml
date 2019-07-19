@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[XTU 1296 GCD]]></title>
+    <url>%2F2019%2F07%2F19%2FXTU-1296-GCD%2F</url>
+    <content type="text"><![CDATA[题目描述a和b的最大公约数(Greatest Common Divisor)是最大的d，d能整除a和b。如果gcd(a,b)=1，我们就称a和b是互素的。 给一个区间[a,b]，求与6互素的数的个数。比如区间[1,10],与6互素的数为1,5,7,所以一共是3个。 输入第一行是一个整数K(K≤10,000)，表示样例的个数。每个样例占一行,为区间[a,b],(1≤a≤b≤1,000,000,000) 输出每行输出一个样例的结果 样例输入2 1 10 1 1000000000 样例输出3 333333333 思路：容斥，与6互素就不会有和6一样的因子2,3，所以[l,r]区间的数减去2和3的倍数再加上6的倍数(计算2和3的倍数时多减了一次)即为答案，另外对于大数判断倍数遍历判断是肯定会超时的，有个思路就是就是 1 到 n 有多少个是 m 倍数，个数为 n/m。 1234567891011121314151617#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;ll a, b;int main() &#123; int k; scanf("%d", &amp;k); while (k--) &#123; scanf("%lld%lld", &amp;a, &amp;b); ll l = (b * 1.0 / 2) - (a - 1) * 1.0 / 2; ll r = (b * 1.0) / 3 - (a - 1) * 1.0 / 3; ll lr = b - a + 1; ll sum = (b * 1.0) / 6 - (a - 1) * 1.0 / 6; sum = lr - l - r + sum; printf("%lld\n", sum); &#125;&#125;]]></content>
+      <categories>
+        <category>程序设计实践</category>
+      </categories>
+      <tags>
+        <tag>容斥</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[XTU 1294 Enquiry]]></title>
     <url>%2F2019%2F07%2F19%2FXTU-1294-Enquiry%2F</url>
     <content type="text"><![CDATA[题目描述男女同学排成一列，你想知道第i个到第j个同学之间，男女相邻排列的出现次数。 输入第一行是一个整数K，表示样例的个数。每个样例的第一行是一个字符串s，其长度len不超过10000，只含字符M和F，M表示男生，F表示女生。每个样例的第二行是一个整数n(1≤n≤1000)，表示查询的次数。以后的N行,每行两个整数i,j(1≤i&lt;j≤len)，表示查询的区间。 输出每个样例的每次查询输出一个整数。 样例输入2 MMMMM 3 1 2 1 3 1 5 MFMFM 3 1 5 2 3 3 5 样例输出0 0 0 4 1 2 思路：维护一个前缀和即可，pre[i]表示1…i有多少男女相邻的个数 12345678910111213141516171819202122232425262728#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;int n, pre[10005];//维护一个前缀和void presum(string str) &#123; memset(pre, 0, sizeof(pre)); pre[0] = 0; for (int i = 1; i &lt; str.length(); ++i) &#123; if (str[i - 1] != str[i]) pre[i] = 1; pre[i] = pre[i] + pre[i - 1]; &#125;&#125;int main() &#123; int k, a, b; scanf("%d", &amp;k); while (k--) &#123; string s; cin &gt;&gt; s; presum(s); scanf("%d", &amp;n); for (int i = 0; i &lt; n; ++i) &#123; scanf("%d%d", &amp;a, &amp;b); printf("%d\n", pre[b - 1] - pre[a - 1]); &#125; &#125; //system("pause");&#125;]]></content>
