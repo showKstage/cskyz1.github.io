@@ -3,12 +3,12 @@
   <entry>
     <title><![CDATA[XTU 1271 Color]]></title>
     <url>%2F2019%2F07%2F19%2FXTU-1271-Color%2F</url>
-    <content type="text"><![CDATA[ԭ������ http://202.197.224.59/exam/index.php/problem/read/id/1271 ��ĿAlice����һ����Ϸ������һ��m��n�ĸ�������Ϳ��k�����ӡ�Ȼ����ÿ�ο��԰�һ�л���һ�еĸ���Ⱦ�ɺ�ɫ��������һ���в����к�ɫ�ĸ��ӡ� ����������ܰѶ��ٸ�����Ϳ�ɺ�ɫ�� ������һ����һ������T(T��100)����ʾ�����ĸ����� ÿ�������ĵ�һ����m(1��m��100),n(1��n��100),k(0��k��m��n)�� �Ժ��k��,ÿ����������x(1��x��m),y(1��y��n)����ʾ(x,y)Ϊ��ɫ���ӡ� ���ÿ�����һ�������Ľ���� ��������1 3 4 2 1 1 3 3 �������8 ˼·�����ȸ���x yͳ�����ļ����ļ����к�ɫ���ӣ���row��col����洢���ٶԶ��߱����ɵ�ȫΪ����ӵ������Լ�����ӵ���������r��c��ʾ����ô���ǿ����Ƴ���ʽans = r * n + c * m - r * c; 1234567891011121314151617181920212223242526272829#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;string.h&gt;typedef long long ll;int row[105], col[105];int main() &#123; int T, m, n, k, x, y; scanf("%d", &amp;T); while (T--) &#123; memset(row, 0, sizeof(row)); memset(col, 0, sizeof(col)); scanf("%d%d%d", &amp;m, &amp;n, &amp;k); while (k--) &#123; scanf("%d%d", &amp;x, &amp;y); row[x - 1] = 1; col[y - 1] = 1; &#125; int r = 0, c = 0; for (int i = 0; i &lt; m; ++i) &#123; if (!row[i]) r++; &#125; for (int i = 0; i &lt; n; ++i) &#123; if (!col[i]) c++; &#125; ll ans = r * n + c * m - r * c; printf("%lld\n", ans); &#125; //system("pause");&#125;]]></content>
+    <content type="text"><![CDATA[原题链接 http://202.197.224.59/exam/index.php/problem/read/id/1271 题目Alice在玩一个游戏，她在一个m×n的格子里，随机涂黑k个格子。然后她每次可以把一行或者一列的格子染成红色，但是这一行中不能有黑色的格子。 请问她最多能把多少个格子涂成红色？ 输入第一行是一个整数T(T≤100)，表示样例的个数。 每个样例的第一行是m(1≤m≤100),n(1≤n≤100),k(0≤k≤m×n)。 以后的k行,每行两个整数x(1≤x≤m),y(1≤y≤n)，表示(x,y)为黑色格子。 输出每行输出一个样例的结果。 样例输入1 3 4 2 1 1 3 3 样例输出8 思路：首先根据x y统计有哪几行哪几列有黑色格子，用row和col数组存储，再对二者遍历可得全为红格子的行数以及红格子的列数，用r和c表示，那么我们可以推出公式ans = r * n + c * m - r * c; 1234567891011121314151617181920212223242526272829#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;string.h&gt;typedef long long ll;int row[105], col[105];int main() &#123; int T, m, n, k, x, y; scanf("%d", &amp;T); while (T--) &#123; memset(row, 0, sizeof(row)); memset(col, 0, sizeof(col)); scanf("%d%d%d", &amp;m, &amp;n, &amp;k); while (k--) &#123; scanf("%d%d", &amp;x, &amp;y); row[x - 1] = 1; col[y - 1] = 1; &#125; int r = 0, c = 0; for (int i = 0; i &lt; m; ++i) &#123; if (!row[i]) r++; &#125; for (int i = 0; i &lt; n; ++i) &#123; if (!col[i]) c++; &#125; ll ans = r * n + c * m - r * c; printf("%lld\n", ans); &#125; //system("pause");&#125;]]></content>
       <categories>
-        <category>�������ʵ��</category>
+        <category>程序设计实践</category>
       </categories>
       <tags>
-        <tag>��ѧ</tag>
+        <tag>数学</tag>
       </tags>
   </entry>
   <entry>

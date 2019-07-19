@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="��ѧ,">
+  <meta name="keywords" content="数学,">
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="ԭ������ http://202.197.224.59/exam/index.php/problem/read/id/1271">
-<meta name="keywords" content="��ѧ">
+<meta name="description" content="原题链接 http://202.197.224.59/exam/index.php/problem/read/id/1271">
+<meta name="keywords" content="数学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="XTU 1271 Color">
 <meta property="og:url" content="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1271-Color/index.html">
 <meta property="og:site_name" content="showKstage&#39;s Blog">
-<meta property="og:description" content="ԭ������ http://202.197.224.59/exam/index.php/problem/read/id/1271">
+<meta property="og:description" content="原题链接 http://202.197.224.59/exam/index.php/problem/read/id/1271">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-19T06:08:58.528Z">
+<meta property="og:updated_time" content="2019-07-19T06:10:16.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XTU 1271 Color">
-<meta name="twitter:description" content="ԭ������ http://202.197.224.59/exam/index.php/problem/read/id/1271">
+<meta name="twitter:description" content="原题链接 http://202.197.224.59/exam/index.php/problem/read/id/1271">
 
 
 
@@ -339,8 +339,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/�������ʵ��/" itemprop="url" rel="index">
-                    <span itemprop="name">�������ʵ��</span>
+                  <a href="/categories/程序设计实践/" itemprop="url" rel="index">
+                    <span itemprop="name">程序设计实践</span>
                   </a>
                 </span>
 
@@ -376,18 +376,18 @@
       
 
       
-        <p>ԭ������</p>
+        <p>原题链接</p>
 <p><a href="http://202.197.224.59/exam/index.php/problem/read/id/1271" target="_blank" rel="noopener">http://202.197.224.59/exam/index.php/problem/read/id/1271</a></p>
 <a id="more"></a>
-<h3 id="��L"><a href="#��L" class="headerlink" title="��Ŀ"></a>��Ŀ</h3><p>Alice����һ����Ϸ������һ��m��n�ĸ�������Ϳ��k�����ӡ�Ȼ����ÿ�ο��԰�һ�л���һ�еĸ���Ⱦ�ɺ�ɫ��������һ���в����к�ɫ�ĸ��ӡ� ����������ܰѶ��ٸ�����Ϳ�ɺ�ɫ��</p>
-<h3 id="����"><a href="#����" class="headerlink" title="����"></a>����</h3><p>��һ����һ������T(T��100)����ʾ�����ĸ����� ÿ�������ĵ�һ����m(1��m��100),n(1��n��100),k(0��k��m��n)�� �Ժ��k��,ÿ����������x(1��x��m),y(1��y��n)����ʾ(x,y)Ϊ��ɫ���ӡ�</p>
-<h3 id="���"><a href="#���" class="headerlink" title="���"></a>���</h3><p>ÿ�����һ�������Ľ����</p>
-<h3 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h3><p>1</p>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>Alice在玩一个游戏，她在一个m×n的格子里，随机涂黑k个格子。然后她每次可以把一行或者一列的格子染成红色，但是这一行中不能有黑色的格子。 请问她最多能把多少个格子涂成红色？</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>第一行是一个整数T(T≤100)，表示样例的个数。 每个样例的第一行是m(1≤m≤100),n(1≤n≤100),k(0≤k≤m×n)。 以后的k行,每行两个整数x(1≤x≤m),y(1≤y≤n)，表示(x,y)为黑色格子。</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>每行输出一个样例的结果。</p>
+<h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><p>1</p>
 <p>3 4 2</p>
 <p>1 1</p>
 <p>3 3</p>
-<h3 id="�������"><a href="#�������" class="headerlink" title="�������"></a>�������</h3><p>8</p>
-<p>˼·�����ȸ���x yͳ�����ļ����ļ����к�ɫ���ӣ���row��col����洢���ٶԶ��߱����ɵ�ȫΪ����ӵ������Լ�����ӵ���������r��c��ʾ����ô���ǿ����Ƴ���ʽans = r * n + c * m - r * c;</p>
+<h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><p>8</p>
+<p>思路：首先根据x y统计有哪几行哪几列有黑色格子，用row和col数组存储，再对二者遍历可得全为红格子的行数以及红格子的列数，用r和c表示，那么我们可以推出公式ans = r * n + c * m - r * c;</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">int</span> row[<span class="number">105</span>], col[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> T, m, n, k, x, y;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">  <span class="keyword">while</span> (T--) &#123;</span><br><span class="line">    <span class="built_in">memset</span>(row, <span class="number">0</span>, <span class="keyword">sizeof</span>(row));</span><br><span class="line">    <span class="built_in">memset</span>(col, <span class="number">0</span>, <span class="keyword">sizeof</span>(col));</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;m, &amp;n, &amp;k);</span><br><span class="line">    <span class="keyword">while</span> (k--) &#123;</span><br><span class="line">      <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;x, &amp;y);</span><br><span class="line">      row[x - <span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">      col[y - <span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> r = <span class="number">0</span>, c = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; ++i) &#123;</span><br><span class="line">      <span class="keyword">if</span> (!row[i]) r++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">      <span class="keyword">if</span> (!col[i]) c++;</span><br><span class="line">    &#125;</span><br><span class="line">    ll ans = r * n + c * m - r * c;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//system("pause");</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -405,7 +405,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/��ѧ/" rel="tag"># ��ѧ</a>
+            <a href="/tags/数学/" rel="tag"># 数学</a>
           
         </div>
       
@@ -516,7 +516,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -527,7 +527,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -583,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#��L"><span class="nav-number">1.</span> <span class="nav-text">��Ŀ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#����"><span class="nav-number">2.</span> <span class="nav-text">����</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#���"><span class="nav-number">3.</span> <span class="nav-text">���</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#��������"><span class="nav-number">4.</span> <span class="nav-text">��������</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#�������"><span class="nav-number">5.</span> <span class="nav-text">�������</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入"><span class="nav-number">2.</span> <span class="nav-text">输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出"><span class="nav-number">3.</span> <span class="nav-text">输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入"><span class="nav-number">4.</span> <span class="nav-text">样例输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出"><span class="nav-number">5.</span> <span class="nav-text">样例输出</span></a></li></ol></div>
             
 
           </div>
