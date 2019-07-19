@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-07-19T03:08:37.812Z</updated>
+  <updated>2019-07-19T05:24:15.058Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT1039</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/PAT1039/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/PAT1039/</id>
+    <published>2019-07-19T05:19:57.000Z</published>
+    <updated>2019-07-19T05:24:15.058Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;��L&quot;&gt;&lt;a href=&quot;#��L&quot; class=&quot;headerlink&quot; title=&quot;��Ŀ&quot;&gt;&lt;/a&gt;��Ŀ&lt;/h3&gt;&lt;p&gt;С������Щ������һ���Լ�ϲ�����鴮�������ӵ�̯���кܶമ������ɫ���鴮�����ǲ��ϰ��κ�һ����ɢ����������С��Ҫ���æ�ж�һ�£�ĳ���������Ƿ������ȫ���Լ���Ҫ�����ӣ�����ǣ���ô�������ж��ٶ�������ӣ�������ǣ���ô������ȱ�˶������ӡ�  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="PAT" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/PAT/"/>
+    
+    
+      <category term="ģ��" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/g%EF%BF%BD%EF%BF%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>My First Post</title>

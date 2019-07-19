@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PAT1039]]></title>
+    <url>%2F2019%2F07%2F19%2FPAT1039%2F</url>
+    <content type="text"><![CDATA[��ĿС������Щ������һ���Լ�ϲ�����鴮�������ӵ�̯���кܶമ������ɫ���鴮�����ǲ��ϰ��κ�һ����ɢ����������С��Ҫ���æ�ж�һ�£�ĳ���������Ƿ������ȫ���Լ���Ҫ�����ӣ�����ǣ���ô�������ж��ٶ�������ӣ�������ǣ���ô������ȱ�˶������ӡ� Ϊ���������������[0-9]��[a-z]��[A-Z]��Χ�ڵ��ַ�����ʾ��ɫ��������ͼ1�У���3����С���������鴮����ô��1����������Ϊ������ȫ������Ҫ�����ӣ�������8�Ų���Ҫ�����ӣ���2����������Ϊû�к�ɫ���ӣ���������һ�ź�ɫ�����ӡ� �����ʽ��ÿ��������� 1 ������������ÿ�����������ֱ��� 2 �����Ⱥ����̯�����鴮��С���������鴮�������������� 1000 �����ӡ� �����ʽ���������������һ������� Yes �Լ��ж��ٶ�������ӣ����������������һ������� No �Լ�ȱ�˶������ӡ������ 1 ���ո�ָ��� �������� 1��ppRYYGrrYBR2258YrR8RrY ������� 1��Yes 8 �������� 2��ppRYYGrrYB225YrR8RrY ������� 2��No 2 ˼·������������ֱ�洢̯�����鴮�ĸ����Լ�С���������鴮�ĸ������������ǰ�[0-9]��[a-z]��[A-Z]��ת�����֣�����������ͳ�ƣ�֮���ж����man[i]&gt;shop[i]����ô����no��ȱ�ٵĸ�����sum += man[i] + shop[i]����֮����yes������ĸ�������sum += shop[i] - man[i]�� 1234567891011121314151617181920212223242526272829303132333435363738#include &lt;bits/stdc++.h&gt;using namespace std;int shop[65], man[65];int main() &#123; string s1, s2; cin &gt;&gt; s1 &gt;&gt; s2; bool ok = true; for (int i = 0; i &lt; s1.length(); ++i) &#123; if (s1[i] &lt;= 'z' &amp;&amp; s1[i] &gt;= 'a') shop[s1[i] - 'a' + 10]++; else if (s1[i] &lt;= 'Z' &amp;&amp; s1[i] &gt;= 'A') shop[s1[i] - 'A' + 36]++; else shop[s1[i] - '0']++; &#125; for (int i = 0; i &lt; s2.length(); ++i) &#123; if (s2[i] &lt;= 'z' &amp;&amp; s2[i] &gt;= 'a') man[s2[i] - 'a' + 10]++; else if (s2[i] &lt;= 'Z' &amp;&amp; s2[i] &gt;= 'A') man[s2[i] - 'A' + 36]++; else man[s2[i] - '0']++; &#125; int sum = 0; for (int i = 0; i &lt; 62; ++i) &#123; if (man[i] &gt; shop[i]) ok = false; &#125; if (ok) &#123; for (int i = 0; i &lt; 62; ++i) sum += shop[i] - man[i]; cout &lt;&lt; "Yes " &lt;&lt; sum &lt;&lt; endl; &#125; else &#123; for (int i = 0; i &lt; 62; ++i) &#123; if (shop[i] &lt; man[i]) sum += man[i] - shop[i]; &#125; cout &lt;&lt; "No " &lt;&lt; sum &lt;&lt; endl; &#125; system("pause");&#125;]]></content>
+      <categories>
+        <category>PAT</category>
+      </categories>
+      <tags>
+        <tag>ģ��</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[My First Post]]></title>
     <url>%2F2019%2F07%2F19%2FMy-First-Post%2F</url>
     <content type="text"><![CDATA[My First Post]]></content>
