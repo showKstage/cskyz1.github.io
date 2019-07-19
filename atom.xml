@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-07-19T06:30:18.585Z</updated>
+  <updated>2019-07-19T06:37:20.744Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>XTU 1291 Buying Gifts</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1291-Buying-Gifts/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1291-Buying-Gifts/</id>
+    <published>2019-07-19T06:32:45.000Z</published>
+    <updated>2019-07-19T06:37:20.744Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;原题链接&lt;br&gt;&lt;a href=&quot;http://202.197.224.59/exam/index.php/problem/exam_read/id/1291/exam_id/270&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://202.197.224.59/exam/index.php/problem/exam_read/id/1291/exam_id/270&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="尺取" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%B0%BA%E5%8F%96/"/>
+    
+  </entry>
   
   <entry>
     <title>XTU 1243 Bob&#39;s Password</title>
