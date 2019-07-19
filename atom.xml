@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-07-19T06:53:35.024Z</updated>
+  <updated>2019-07-19T07:26:49.820Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>XTU 1294 Enquiry</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1294-Enquiry/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1294-Enquiry/</id>
+    <published>2019-07-19T07:09:30.000Z</published>
+    <updated>2019-07-19T07:26:49.820Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;男女同学排成一列，你想知道第i个到第j个同学之间，男女相邻排列的出现次数。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="前缀和" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>XTU 1291 Buying Gifts</title>
