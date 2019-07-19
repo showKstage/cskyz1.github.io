@@ -41,11 +41,11 @@
     <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1243-Bob-s-Password/"/>
     <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1243-Bob-s-Password/</id>
     <published>2019-07-19T06:16:04.000Z</published>
-    <updated>2019-07-19T06:54:35.680Z</updated>
+    <updated>2019-07-19T06:56:09.943Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;Bob最新购入一款安卓手机，他发现安卓手机密码使用的是画线方式。&lt;/p&gt;
+      &lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;Bob最新购入一款安卓手机，他发现安卓手机密码使用的是画线方式。&lt;br&gt;一共有9个点，我们按行列顺序依次为1~9。密码要求在点和点之间连线不能有还未曾经过的点。
     
     </summary>
     
