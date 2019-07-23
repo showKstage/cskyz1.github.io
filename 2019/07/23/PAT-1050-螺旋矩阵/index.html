@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="题目给定一个正数数列，我们可以从中截取任意的连续的几个数，称为片段。例如，给定数列 { 0.1, 0.2, 0.3, 0.4 }，我们有 (0.1) (0.1, 0.2) (0.1, 0.2, 0.3) (0.1, 0.2, 0.3, 0.4) (0.2) (0.2, 0.3) (0.2, 0.3, 0.4) (0.3) (0.3, 0.4) (0.4) 这 10 个片段。">
+<meta name="description" content="题目本题要求将给定的 N 个正整数按非递增的顺序，填入“螺旋矩阵”。所谓“螺旋矩阵”，是指从左上角第 1 个格子开始，按顺时针螺旋方向填充。要求矩阵的规模为 m 行 n 列，">
 <meta name="keywords" content="数学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PAT 1049 数列的片段和">
-<meta property="og:url" content="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1049-数列的片段和/index.html">
+<meta property="og:url" content="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-螺旋矩阵/index.html">
 <meta property="og:site_name" content="showKstage&#39;s Blog">
-<meta property="og:description" content="题目给定一个正数数列，我们可以从中截取任意的连续的几个数，称为片段。例如，给定数列 { 0.1, 0.2, 0.3, 0.4 }，我们有 (0.1) (0.1, 0.2) (0.1, 0.2, 0.3) (0.1, 0.2, 0.3, 0.4) (0.2) (0.2, 0.3) (0.2, 0.3, 0.4) (0.3) (0.3, 0.4) (0.4) 这 10 个片段。">
+<meta property="og:description" content="题目本题要求将给定的 N 个正整数按非递增的顺序，填入“螺旋矩阵”。所谓“螺旋矩阵”，是指从左上角第 1 个格子开始，按顺时针螺旋方向填充。要求矩阵的规模为 m 行 n 列，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-23T09:25:51.476Z">
+<meta property="og:updated_time" content="2019-07-23T13:07:25.372Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PAT 1049 数列的片段和">
-<meta name="twitter:description" content="题目给定一个正数数列，我们可以从中截取任意的连续的几个数，称为片段。例如，给定数列 { 0.1, 0.2, 0.3, 0.4 }，我们有 (0.1) (0.1, 0.2) (0.1, 0.2, 0.3) (0.1, 0.2, 0.3, 0.4) (0.2) (0.2, 0.3) (0.2, 0.3, 0.4) (0.3) (0.3, 0.4) (0.4) 这 10 个片段。">
+<meta name="twitter:description" content="题目本题要求将给定的 N 个正整数按非递增的顺序，填入“螺旋矩阵”。所谓“螺旋矩阵”，是指从左上角第 1 个格子开始，按顺时针螺旋方向填充。要求矩阵的规模为 m 行 n 列，">
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1049-数列的片段和/">
+  <link rel="canonical" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-螺旋矩阵/">
 
 
 
@@ -287,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1049-数列的片段和/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-螺旋矩阵/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="showKstage">
@@ -376,16 +376,14 @@
       
 
       
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个正数数列，我们可以从中截取任意的连续的几个数，称为片段。例如，给定数列 { 0.1, 0.2, 0.3, 0.4 }，我们有 (0.1) (0.1, 0.2) (0.1, 0.2, 0.3) (0.1, 0.2, 0.3, 0.4) (0.2) (0.2, 0.3) (0.2, 0.3, 0.4) (0.3) (0.3, 0.4) (0.4) 这 10 个片段。</p>
-<a id="more"></a>
-<p>给定正整数数列，求出全部片段包含的所有的数之和。如本例中 10 个片段总和是 0.1 + 0.3 + 0.6 + 1.0 + 0.2 + 0.5 + 0.9 + 0.3 + 0.7 + 0.4 = 5.0。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入第一行给出一个不超过 10^5的正整数 N，表示数列中数的个数，第二行给出 N 个不超过 1.0 的正数，是数列中的数，其间以空格分隔。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在一行中输出该序列所有片段包含的数之和，精确到小数点后 2 位。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><p>4</p>
-<p>0.1 0.2 0.3 0.4</p>
-<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><p>5.00</p>
-<p>思路：第一次直接模拟，结果直接超时，后来发现可以推公式，即先算出右边包括其本身出现的次数，是n-i，那么他左边的次数就是i+1，比如3之前有1、2，那么2 * 右边的次数 * a[i] 就是ans，因为对于1可以和右边的3，（3，4）组合即，123，1234，2也可以组成23，234，所以排列组合得ans = 左边的个数 * 右边的个数 * a[i];</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">double</span> a[<span class="number">100005</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> n;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">  <span class="keyword">double</span> sum = <span class="number">0.00</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%lf"</span>, &amp;a[i]);</span><br><span class="line">    sum += (i + <span class="number">1</span>) * a[i] * (n - i);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//先算出右边包括其本身出现的次数，是n-i，那么他左边的次数就是i+1，比如3之前有1、2，那么2*右边的次数*a[i]就是大小，</span></span><br><span class="line">  <span class="comment">//因为对于1可以和右边的3，（3，4）组合即，123，1234，2也可以组成23，234，</span></span><br><span class="line">  <span class="comment">//所以排列组合得ans=左边的个数*右边的个数*a[i];</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">//   for (int i = 0; i &lt; n; ++i) &#123;          //每次选一个数</span></span><br><span class="line">  <span class="comment">//     for (int j = 0; j &lt; n - i; ++j) &#123;    //一个数、两个数、三个数...</span></span><br><span class="line">  <span class="comment">//       for (int k = i; k &lt; n - j; ++k) &#123;  //累加</span></span><br><span class="line">  <span class="comment">//         sum += a[k];</span></span><br><span class="line">  <span class="comment">//       &#125;</span></span><br><span class="line">  <span class="comment">//     &#125;</span></span><br><span class="line">  <span class="comment">//   &#125;TLE</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%.2lf\n"</span>, sum);</span><br><span class="line">  system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>本题要求将给定的 N 个正整数按非递增的顺序，填入“螺旋矩阵”。所谓“螺旋矩阵”，是指从左上角第 1 个格子开始，按顺时针螺旋方向填充。要求矩阵的规模为 m 行 n 列，<a id="more"></a>满足条件：m×n 等于 N；m≥n；且 m−n 取所有可能值中的最小值。</p>
+<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在第 1 行中给出一个正整数 N，第 2 行给出 N 个待填充的正整数。所有数字不超过 10<br>​4<br>，相邻数字以空格分隔。</p>
+<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>输出螺旋矩阵。每行 n 个数字，共 m 行。相邻数字以 1 个空格分隔，行末不得有多余空格。</p>
+<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><p>12</p>
+<p>37 76 20 98 76 42 53 95 60 81 58 93</p>
+<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><p>98 95 93<br>42 37 81<br>53 20 76<br>58 60 76</p>
+<p>思路：这题单纯只是想记录下找出N的两个差值最小的约数，即sqrt（N）前后的两个数,大的为m,小的为n即可，螺旋矩阵就直接按右、下、左、上模拟即可</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123; <span class="keyword">return</span> x &gt; y; &#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> N, c, r;</span><br><span class="line">  <span class="built_in">cin</span> &gt;&gt; N;</span><br><span class="line">  <span class="keyword">for</span> (r = <span class="built_in">sqrt</span>(N); r &gt;= <span class="number">1</span>; r--) &#123;</span><br><span class="line">    <span class="keyword">if</span> (N % r == <span class="number">0</span>) &#123;</span><br><span class="line">      c = N / r;</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">int</span> a[N + <span class="number">5</span>], b[c + <span class="number">5</span>][r + <span class="number">5</span>];</span><br><span class="line">  <span class="built_in">memset</span>(a, <span class="number">0</span>, <span class="keyword">sizeof</span>(a));</span><br><span class="line">  <span class="built_in">memset</span>(b, <span class="number">0</span>, <span class="keyword">sizeof</span>(b));</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) <span class="built_in">cin</span> &gt;&gt; a[i];</span><br><span class="line">  sort(a, a + N, cmp);</span><br><span class="line">  b[<span class="number">0</span>][<span class="number">0</span>] = a[<span class="number">0</span>];</span><br><span class="line">  <span class="keyword">int</span> t = <span class="number">0</span>, x = <span class="number">0</span>, y = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> (t &lt; r * c) &#123;</span><br><span class="line">    <span class="keyword">while</span> (y + <span class="number">1</span> &lt; r &amp;&amp; !b[x][y + <span class="number">1</span>]) &#123;</span><br><span class="line">      y++, t++;</span><br><span class="line">      b[x][y] = a[t];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (x + <span class="number">1</span> &lt; c &amp;&amp; !b[x + <span class="number">1</span>][y]) &#123;</span><br><span class="line">      x++, t++;</span><br><span class="line">      b[x][y] = a[t];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (y - <span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; !b[x][y - <span class="number">1</span>]) &#123;</span><br><span class="line">      y--, t++;</span><br><span class="line">      b[x][y] = a[t];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (x - <span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; !b[x - <span class="number">1</span>][y]) &#123;</span><br><span class="line">      x--, t++;</span><br><span class="line">      b[x][y] = a[t];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; c; ++i) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; r; ++j) &#123;</span><br><span class="line">      <span class="keyword">if</span> (j == r - <span class="number">1</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, b[i][j]);</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, b[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -415,8 +413,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/23/PAT-1050-螺旋矩阵/" rel="next" title="PAT 1049 数列的片段和">
-                <i class="fa fa-chevron-left"></i> PAT 1049 数列的片段和
+              <a href="/2019/07/20/计算机网络-学习笔记/" rel="next" title="计算机网络 学习笔记">
+                <i class="fa fa-chevron-left"></i> 计算机网络 学习笔记
               </a>
             
           </div>
@@ -424,6 +422,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/23/PAT-1049-数列的片段和/" rel="prev" title="PAT 1049 数列的片段和">
+                PAT 1049 数列的片段和 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
