@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-07-23T09:25:51.476Z</updated>
+  <updated>2019-07-23T13:38:58.268Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT 1052 卖个萌</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1052-%E5%8D%96%E4%B8%AA%E8%90%8C/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1052-卖个萌/</id>
+    <published>2019-07-23T13:29:40.000Z</published>
+    <updated>2019-07-23T13:38:58.268Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;萌萌哒表情符号通常由“手”、“眼”、“口”三个主要部分组成。简单起见，我们假设一个表情符号是按下列格式输出的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[左手] ([左眼][口][右眼]) [右手]&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="PAT" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/PAT/"/>
+    
+    
+      <category term="字符串" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT 1049 数列的片段和</title>
@@ -37,11 +60,11 @@
   </entry>
   
   <entry>
-    <title>PAT 1049 数列的片段和</title>
+    <title>PAT 1050 螺旋矩阵</title>
     <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5/"/>
     <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-螺旋矩阵/</id>
     <published>2019-07-23T09:18:00.000Z</published>
-    <updated>2019-07-23T13:07:25.372Z</updated>
+    <updated>2019-07-23T13:31:33.716Z</updated>
     
     <summary type="html">
     
