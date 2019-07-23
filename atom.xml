@@ -257,24 +257,4 @@
     
   </entry>
   
-  <entry>
-    <title>PAT1039</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/PAT1039/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/PAT1039/</id>
-    <published>2019-07-19T05:19:57.000Z</published>
-    <updated>2019-07-20T07:14:39.759Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;小红想买些珠子做一串自己喜欢的珠串。卖珠子的摊主有很多串五颜六色的珠串，但是不肯把任何一串拆散了卖。于是小红要你帮忙判断一下，某串珠子里是否包含了全部自己想要的珠子？如果是，那么告诉她有多少多余的珠子；如果不是，那么告诉她缺了多少珠子。  &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="PAT" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/PAT/"/>
-    
-    
-      <category term="模拟" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
 </feed>
