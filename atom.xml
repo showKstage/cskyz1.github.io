@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-07-23T13:51:50.611Z</updated>
+  <updated>2019-07-23T13:52:17.815Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1054-%E6%B1%82%E5%B9%B3%E5%9D%87%E5%80%BC/"/>
     <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1054-求平均值/</id>
     <published>2019-07-23T13:44:55.000Z</published>
-    <updated>2019-07-23T13:51:50.611Z</updated>
+    <updated>2019-07-23T13:52:17.815Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;本题的基本要求非常简单：给定 N 个实数，计算它们的平均值。但复杂的是有些输入数据可能是非法的。一个“合法”的输入是
-        
-      
+      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;本题的基本要求非常简单：给定 N 个实数，计算它们的平均值。但复杂的是有些输入数据可能是非法的。一个“合法”的输入是 [−1000,1000] 区间内的实数，
     
     </summary>
     
