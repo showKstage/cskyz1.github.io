@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-07-23T13:52:17.815Z</updated>
+  <updated>2019-08-05T09:43:11.716Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT (Basic Level) Practice</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/08/05/PAT-Basic-Level-Practice/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/08/05/PAT-Basic-Level-Practice/</id>
+    <published>2019-08-05T09:20:41.000Z</published>
+    <updated>2019-08-05T09:43:11.716Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;j��&quot;&gt;&lt;a href=&quot;#j��&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PAT" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/PAT/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>PAT 1054 求平均值</title>
