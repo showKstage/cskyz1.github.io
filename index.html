@@ -340,7 +340,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-29T22:09:59+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-11-29T22:12:19+08:00">
                 2019-11-29
               </time>
             
@@ -375,205 +375,18 @@
 
       
         
-          
-            <h2 id="��һ�£����������̺��׽���"><a href="#��һ�£����������̺��׽���" class="headerlink" title="��һ�£����������̺��׽���"></a>��һ�£����������̺��׽���</h2><p>���´��룬��<a href="https://github.com/riba2534/TCP-IP-NetworkNote">TCP-IP-NetworkNote</a>�п����ҵ���ֱ�ӵ����ӿ��ܽ���ȥ��</p>
-<h3 id="1-1-���������̺��׽���"><a href="#1-1-���������̺��׽���" class="headerlink" title="1.1 ���������̺��׽���"></a>1.1 ���������̺��׽���</h3><h4 id="1-1-1������绰�׽���"><a href="#1-1-1������绰�׽���" class="headerlink" title="1.1.1������绰�׽���"></a>1.1.1������绰�׽���</h4><p>�Ե绰����绰�ķ�ʽ�������׽��֡�</p>
-<p><strong>���� socket ��������װ�绰����ʱ���еĶԻ�</strong>��</p>
-<blockquote>
-<p>�ʣ��ӵ绰��Ҫ׼��ʲô��</p>
-<p>�𣺵�Ȼ�ǵ绰����</p>
-</blockquote>
-<p>���˵绰�����ܰ�װ�绰�����Ǿ�Ҫ׼��һ���绰�������溯���൱�ڵ绰�����׽��֡�</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/socket.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">socket</span><span class="params">(<span class="keyword">int</span> domain, <span class="keyword">int</span> type, <span class="keyword">int</span> protocol)</span></span>;</span><br><span class="line"><span class="comment">//�ɹ�ʱ�����ļ���������ʧ��ʱ����-1</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>���� bind ����������绰���룩ʱ���еĶԻ�</strong>��</p>
-<blockquote>
-<p>�ʣ������ҵĵ绰�����Ƕ���</p>
-<p>���ҵĵ绰������123-1234</p>
-</blockquote>
-<p>�׽���ͬ����ˡ�������绰������绰����һ�����������º����������õ��׽��ַ����ַ��Ϣ��IP��ַ�Ͷ˿ںţ���</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/socket.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">bind</span><span class="params">(<span class="keyword">int</span> sockfd, struct sockaddr *myaddr, <span class="keyword">socklen_t</span> addrlen)</span></span>;</span><br><span class="line"><span class="comment">//�ɹ�ʱ����0��ʧ��ʱ����-1</span></span><br></pre></td></tr></table></figure>
-
-<p>���� bind �������׽��ַ����ַ֮�󣬾ͻ�����������е�׼������������������Ҫ���ӵ绰�߲��ȴ����硣</p>
-<p><strong>���� listen ���������ӵ绰�ߣ�ʱ���еĶԻ�</strong>��</p>
-<blockquote>
-<p>�ʣ��Ѽ�����绰�����Ƿ�ֻ�����ӵ绰�ߣ�</p>
-<p>�𣺶ԣ�ֻ��Ҫ���Ӿ��ܽ����绰��</p>
-</blockquote>
-<p>һ���ӵ绰�ߣ��绰���Ϳ���ת��Ϊ�ɽ���״̬����ʱ�����˿��Բ���绰�������ӵ��û���ͬ������Ҫ���׽���ת���ɿɽ�������״̬��</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/socket.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">listen</span><span class="params">(<span class="keyword">int</span> sockfd, <span class="keyword">int</span> backlog)</span></span>;</span><br><span class="line"><span class="comment">//�ɹ�ʱ����0��ʧ��ʱ����-1</span></span><br></pre></td></tr></table></figure>
-
-<p>���Ӻõ绰���Ժ�������˲���绰�����壬����Ͳ���ܽ����绰��</p>
-<p><strong>���� accept ����������Ͳ��ʱ���еĶԻ�</strong>��</p>
-<blockquote>
-<p>�ʣ��绰�����ˣ��Ҹ���ô�죿</p>
-<p>�𣺽�������</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/socket.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">accept</span><span class="params">(<span class="keyword">int</span> sockfd,struct sockaddr *addr,<span class="keyword">socklen_t</span> *addrlen)</span></span>;</span><br><span class="line"><span class="comment">//�ɹ�ʱ�����ļ���������ʧ��ʱ����-1</span></span><br></pre></td></tr></table></figure>
-
-<p>�������кͽ�������������׽��ִ������̿��������£�</p>
-<ol>
-<li>��һ�������� socket ���������׽��֡�</li>
-<li>�ڶ��������� bind ��������IP��ַ�Ͷ˿ںš�</li>
-<li>������������ listen ����ת��Ϊ�ɽ�������״̬��</li>
-<li>���Ĳ������� accept ���������׽�������</li>
-</ol>
-<h4 id="1-1-2-��дHello-World�׽��ֳ���"><a href="#1-1-2-��дHello-World�׽��ֳ���" class="headerlink" title="1.1.2  ��дHello World�׽��ֳ���"></a>1.1.2  ��д<code>Hello World</code>�׽��ֳ���</h4><p><strong>�����</strong>��</p>
-<p>�������ˣ�server�����ܹ�������������ĳ������湹�����������֤֮ǰ�ᵽ�ĺ������ù��̣��÷��������յ�����������������߷���<code>Hello World!</code>�𸴡������ֺ����ĵ���˳���⣬���ǻ�δ�漰�κ�ʵ�ʱ�̡���ˣ��Ķ�����ʱ���ص��ע�׽�����صĺ������ù��̣���������ȫ���̡�</p>
-<p>�������˴�����μ���<a href="ch01/hello_server.c">hello_server.c</a></p>
-<p><strong>�ͻ���</strong>��</p>
-<p>�ͻ��˳���ֻ��<code>���� socket ���������׽���</code> �� <code>���� connect ���������˷�����������</code>���������裬��������ͻ��ˣ���Ҫ�鿴��������������ݣ�</p>
-<ol>
-<li>���� socket ���� �� connect ����</li>
-<li>�����˹�ͬ�������շ��ַ�������</li>
-</ol>
-<p>�ͻ��˴�����μ���<a href="ch01/hello_client.c">hello_client.c</a></p>
-<p><strong>����</strong>��</p>
-<p>�ֱ�Կͻ��˺ͷ���˳�����б��룺</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc hello_server.c -o hserver</span><br><span class="line">gcc hello_client.c -o hclient</span><br></pre></td></tr></table></figure>
-
-<p><strong>����</strong>��</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./hserver 9190</span><br><span class="line">./hclient 127.0.0.1 9190</span><br></pre></td></tr></table></figure>
-
-<p>���е�ʱ�������� 9190 �˿���������Ȼ�� heserver �ͻ�һֱ�ȴ��ͻ��˽�����Ӧ�����ͻ��˼���λ�ڱ��ص� IP Ϊ 127.0.0.1 �ĵ�ַ��9190�˿�ʱ���ͻ��˾ͻ��յ�����˵Ļ�Ӧ�����<code>Hello World!</code></p>
-<h3 id="1-2-����-Linux-���l�����"><a href="#1-2-����-Linux-���l�����" class="headerlink" title="1.2 ���� Linux ���ļ�����"></a>1.2 ���� Linux ���ļ�����</h3><p>�����׽��ֵĹ�����ͻȻ̸���ļ�Ҳ����Щ��֡����Ƕ��� Linux ���ԣ�socket �������ļ�����û����������б�Ҫ��ϸ�˽��ļ����� Linux �����socket Ҳ����Ϊ���ļ���һ�֣�������������ݴ����������Ȼ����ʹ�� I/O ����غ�����Windows �� Linux ��ͬ����Ҫ���� socket ���ļ��ġ������ Windows ����Ҫ������������ݴ�����غ�����</p>
-<h4 id="1-2-1-�ײ���ʺ��l�������"><a href="#1-2-1-�ײ���ʺ��l�������" class="headerlink" title="1.2.1 �ײ���ʺ��ļ�������"></a>1.2.1 �ײ���ʺ��ļ�������</h4><p>�������׼�����������׼������ļ���������</p>
-<table>
-<thead>
-<tr>
-<th align="center">�ļ�������</th>
-<th align="center">����</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">0</td>
-<td align="center">��׼���룺Standard Input</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">��׼�����Standard Output</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">��׼����Standard Error</td>
-</tr>
-</tbody></table>
-<p>�ļ����׽���һ�㾭���������̲Żᱻ�����ļ���������</p>
-<p>�ļ�������Ҳ����Ϊ���ļ�����������ǡ��������Ҫ�� Windows �е������ˣ��ڱ����������� Windows ƽ̨��ʹ�á������������� Linux ��ʹ�á�����������</p>
-<h4 id="1-2-2-���l�"><a href="#1-2-2-���l�" class="headerlink" title="1.2.2 ���ļ�:"></a>1.2.2 ���ļ�:</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/types.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/stat.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fcntl.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">open</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *path, <span class="keyword">int</span> flag)</span></span>;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">�ɹ�ʱ�����ļ���������ʧ��ʱ����-1</span></span><br><span class="line"><span class="comment">path : �ļ������ַ�����ַ</span></span><br><span class="line"><span class="comment">flag : �ļ���ģʽ��Ϣ</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<p>�ļ���ģʽ���±���</p>
-<table>
-<thead>
-<tr>
-<th align="center">��ģʽ</th>
-<th align="center">����</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">O_CREAT</td>
-<td align="center">��Ҫʱ�����ļ�</td>
-</tr>
-<tr>
-<td align="center">O_TRUNC</td>
-<td align="center">ɾ��ȫ����������</td>
-</tr>
-<tr>
-<td align="center">O_APPEND</td>
-<td align="center">ά���������ݣ����浽�����</td>
-</tr>
-<tr>
-<td align="center">O_RDONLY</td>
-<td align="center">ֻ����</td>
-</tr>
-<tr>
-<td align="center">O_WRONLY</td>
-<td align="center">ֻд��</td>
-</tr>
-<tr>
-<td align="center">O_RDWR</td>
-<td align="center">��д��</td>
-</tr>
-</tbody></table>
-<h4 id="1-2-3-�ر��l���"><a href="#1-2-3-�ر��l���" class="headerlink" title="1.2.3 �ر��ļ���"></a>1.2.3 �ر��ļ���</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">close</span><span class="params">(<span class="keyword">int</span> fd)</span></span>;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">�ɹ�ʱ���� 0 ��ʧ��ʱ���� -1</span></span><br><span class="line"><span class="comment">fd : ��Ҫ�رյ��ļ����׽��ֵ��ļ�������</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<p>�����ô˺���ͬʱ�����ļ���������������رգ���ֹ����Ӧ�ļ���������Ҫע����ǣ��˺����������Թر��ļ��������Թر��׽��֡��ٴ�֤���ˡ�Linux ����ϵͳ�������ļ����׽��֡����ص㡣</p>
-<h4 id="1-2-4-������д���l���"><a href="#1-2-4-������д���l���" class="headerlink" title="1.2.4 ������д���ļ���"></a>1.2.4 ������д���ļ���</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;</span></span></span><br><span class="line"><span class="keyword">ssize_t</span> write(<span class="keyword">int</span> fd, <span class="keyword">const</span> <span class="keyword">void</span> *buf, <span class="keyword">size_t</span> nbytes);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">�ɹ�ʱ����д����ֽ��� ��ʧ��ʱ���� -1</span></span><br><span class="line"><span class="comment">fd : ��ʾ���ݴ��������ļ�������</span></span><br><span class="line"><span class="comment">buf : ����Ҫ�������ݵĻ���ֵ��ַ</span></span><br><span class="line"><span class="comment">nbytes : Ҫ�������ݵ��ֽ���</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<p>�ڴ˺����Ķ����У�size_t ��ͨ�� typedef ������ unsigned int ���͡��� ssize_t ��˵��ssize_t ǰ���ӵ� s ���� signed ���� ssize_t ��ͨ�� typedef ������ signed int ���͡�</p>
-<p>�������ļ����������ݣ�</p>
-<p>�������<a href="ch01/low_open.c">low_open.c</a></p>
-<p>�������У�</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc low_open.c -o lopen</span><br><span class="line">./lopen</span><br></pre></td></tr></table></figure>
-
-<p>Ȼ�������һ��<code>data.txt</code>���ļ���������<code>Let&#39;s go!</code></p>
-<h4 id="1-2-5-��ȡ�l��е����ݣ�"><a href="#1-2-5-��ȡ�l��е����ݣ�" class="headerlink" title="1.2.5 ��ȡ�ļ��е����ݣ�"></a>1.2.5 ��ȡ�ļ��е����ݣ�</h4><p>��֮ǰ��<code>write()</code>�������Ӧ��<code>read()</code>�������루���գ����ݡ�</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;</span></span></span><br><span class="line"><span class="keyword">ssize_t</span> read(<span class="keyword">int</span> fd, <span class="keyword">void</span> *buf, <span class="keyword">size_t</span> nbytes);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">�ɹ�ʱ���ؽ��յ��ֽ������������ļ���β�򷵻� 0����ʧ��ʱ���� -1</span></span><br><span class="line"><span class="comment">fd : ��ʾ���ݽ��ն�����ļ�������</span></span><br><span class="line"><span class="comment">buf : Ҫ������յ����ݵĻ����ֵַ��</span></span><br><span class="line"><span class="comment">nbytes : Ҫ�������ݵ�����ֽ���</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<p>����ʾ��ͨ�� read() ������ȡ data.txt �б�������ݡ�</p>
-<p>�������<a href="ch01/low_read.c">low_read.c</a></p>
-<p>�������У�</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc low_read.c -o lread</span><br><span class="line">./lread</span><br></pre></td></tr></table></figure>
-
-<p>����һ���� data.txt �ļ���û��ɾ������£��������</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">file descriptor: 3</span><br><span class="line">file data: Let&apos;s go!</span><br></pre></td></tr></table></figure>
-
-<p>�����ļ��������� I/O �������˽�����Ҫ���ף���Щ����ͬ���ʺ����׽��֡�</p>
-<h4 id="1-2-6-�l����������׽���"><a href="#1-2-6-�l����������׽���" class="headerlink" title="1.2.6 �ļ����������׽���"></a>1.2.6 �ļ����������׽���</h4><p>���潫ͬʱ�����ļ����׽��֣�����������̬�ȽϷ��ص��ļ���������ֵ.</p>
-<p>�������<a href="ch01/fd_seri.c">fd_seri.c</a></p>
-<p><strong>��������</strong>��</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc fd_seri.c -o fds</span><br><span class="line">./fds</span><br></pre></td></tr></table></figure>
-
-<p><strong>������</strong>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">file descriptor 1: 3</span><br><span class="line">file descriptor 2: 15</span><br><span class="line">file descriptor 3: 16</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-����-Windows-ƽ̨��ʵ��"><a href="#1-3-����-Windows-ƽ̨��ʵ��" class="headerlink" title="1.3 ���� Windows ƽ̨��ʵ��"></a>1.3 ���� Windows ƽ̨��ʵ��</h3><p>����</p>
-<h3 id="1-4-����-Windows-���׽�����غ�����ʾ��"><a href="#1-4-����-Windows-���׽�����غ�����ʾ��" class="headerlink" title="1.4 ���� Windows ���׽�����غ�����ʾ��"></a>1.4 ���� Windows ���׽�����غ�����ʾ��</h3><p>����</p>
-<h3 id="1-5-ϰ��"><a href="#1-5-ϰ��" class="headerlink" title="1.5 ϰ��"></a>1.5 ϰ��</h3><blockquote>
-<p>:heavy_exclamation_mark:���²��ֵĴ𰸣��������Ҹ��˹۵㣬���ܲ�����ȷ��</p>
-</blockquote>
-<ol>
-<li><p>�׽������������е�������ʲô��Ϊ�γ���Ϊ�׽��֣�</p>
-<blockquote>
-<p>�𣺲���ϵͳ���ṩ���׽��֡���socket���Ĳ������׽������������ݴ����õ������豸����ˣ��������̡�Ҳ�С��׽��ֱ�̡������׽��֡�����������������Ĺ��ߡ�</p>
-</blockquote>
-</li>
-<li><p>�ڷ������˴����׽����Ժ󣬻����ε��� listen ������ accept ��������Ƚ϶������á�</p>
-<blockquote>
-<p>�𣺵��� listen �������׽���ת���ɿ�������״̬�������������� accept ���������������������û���������������µ��øú������򲻻᷵�أ�ֱ������������Ϊֹ��</p>
-</blockquote>
-</li>
-<li><p>Linux �У����׽������ݽ��� I/O ʱ����ֱ��ʹ���ļ� I/O ��غ��������� Windows ���򲻿��ԡ�ԭ��Ϊ�Σ�</p>
-<blockquote>
-<p>�����ԡ�</p>
-</blockquote>
-</li>
-<li><p>�����׽��ֺ�һ�����������ַ��Ϊʲô��Ϊ����ɵ�ַ������Ҫ�����ĸ�������</p>
-<blockquote>
-<p>���׽��ֱ�����֮��ֻ��Ϊ�������IP��ַ�Ͷ˿ںź󣬿ͻ��˲��ܹ�ͨ��IP��ַ���˿ں���������˽������ӣ���Ҫ���� bind ��������ɵ�ַ���䡣</p>
-</blockquote>
-</li>
-<li><p>Linux �е��ļ��������� Windows �ľ��ʵ���Ϸǳ����ơ������׽���Ϊ����˵�����ǵĺ��塣</p>
-<blockquote>
-<p>�����ԡ�</p>
-</blockquote>
-</li>
-<li><p>�ײ� I/O ������ ANSI ��׼������ļ� I/O �����к�����</p>
-<blockquote>
-<p>���ļ� I/O �ֳ�Ϊ�ͼ����� I/O����ѭ POSIX ��ر�׼���κμ��� POSIX ��׼�Ĳ���ϵͳ�϶�֧���ļ�I/O����׼ I/O ����Ϊ�߼����� I/O����ѭ ANSI C ��ر�׼��ֻҪ�����������б�׼ I/O �⣬��׼ I/O �Ϳ���ʹ�á���Linux ��ʹ�õ��� GLIBC�����Ǳ�׼C��ĳ������������� ANSI C �ж���ĺ����������� POSIX ��׼�ж���ĺ�������ˣ�Linux �¼ȿ���ʹ�ñ�׼ I/O��Ҳ����ʹ���ļ� I/O����</p>
-</blockquote>
-</li>
-<li><p>�ο����������ʾ��<code>low_open.c</code>��<code>low_read.c</code>���ֱ����õײ��ļ� I/O �� ANSI ��׼ I/O ��д�ļ����Ƴ��򡣿�����ָ�����Ƴ����ʹ�÷�����</p>
-<blockquote>
-<p>�����ԡ�</p>
-</blockquote>
-</li>
-</ol>
-
-          
+          <h2 id="第一章：理解网络编程和套接字"><a href="#第一章：理解网络编程和套接字" class="headerlink" title="第一章：理解网络编程和套接字"></a>第一章：理解网络编程和套接字</h2><p>本章代码，在<a href="https://github.com/riba2534/TCP-IP-NetworkNote">TCP-IP-NetworkNote</a>中可以找到，直接点连接可能进不去。</p>
+<h3 id="1-1-理解网络编程和套接字"><a href="#1-1-理解网络编程和套接字" class="headerlink" title="1.1 理解网络编程和套接字"></a>1.1 理解网络编程和套接字
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/11/29/TCP-ch01/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </h3></div>
     
     
     

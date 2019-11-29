@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-11-29T14:09:59.796Z</updated>
+  <updated>2019-11-29T14:12:19.601Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -21,17 +21,12 @@
     <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch01/"/>
     <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch01/</id>
     <published>2019-11-29T14:09:18.000Z</published>
-    <updated>2019-11-29T14:09:59.796Z</updated>
+    <updated>2019-11-29T14:12:19.601Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;��һ�£����������̺��׽���&quot;&gt;&lt;a href=&quot;#��һ�£����������̺��׽���&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;第一章：理解网络编程和套接字&quot;&gt;&lt;a href=&quot;#第一章：理解网络编程和套接字&quot; class=&quot;headerlink&quot; title=&quot;第一章：理解网络编程和套接字&quot;&gt;&lt;/a&gt;第一章：理解网络编程和套接字&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到，直接点连接可能进不去。&lt;/p&gt;
+&lt;h3 id=&quot;1-1-理解网络编程和套接字&quot;&gt;&lt;a href=&quot;#1-1-理解网络编程和套接字&quot; class=&quot;headerlink&quot; title=&quot;1.1 理解网络编程和套接字&quot;&gt;&lt;/a&gt;1.1 理解网络编程和套接字
     
     </summary>
     
