@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-11-29T14:12:19.601Z</updated>
+  <updated>2019-11-29T14:29:08.163Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -15,6 +15,233 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TCP_ch14</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch14/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch14/</id>
+    <published>2019-11-29T14:22:17.000Z</published>
+    <updated>2019-11-29T14:29:08.163Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-14-章-多播与广播&quot;&gt;&lt;a href=&quot;#第-14-章-多播与广播&quot; class=&quot;headerlink&quot; title=&quot;第 14 章 多播与广播&quot;&gt;&lt;/a&gt;第 14 章 多播与广播&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;h3 id=&quot;14-1-多播&quot;&gt;&lt;a href=&quot;#14-1-多播&quot; class=&quot;headerlink&quot; title=&quot;14.1 多播&quot;&gt;&lt;/a&gt;14.1 多播
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch13</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch13/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch13/</id>
+    <published>2019-11-29T14:22:12.000Z</published>
+    <updated>2019-11-29T14:28:56.735Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-13-章-多种-I-O-函数&quot;&gt;&lt;a href=&quot;#第-13-章-多种-I-O-函数&quot; class=&quot;headerlink&quot; title=&quot;第 13 章 多种 I/O 函数&quot;&gt;&lt;/a&gt;第 13 章 多种 I/O 函数&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;h3 id=&quot;13-1-send-amp-recv-函数&quot;&gt;&lt;a href=&quot;#13-1-send-amp-recv-函数&quot; class=&quot;headerlink&quot; title=&quot;13.1 send &amp;amp; recv 函数&quot;&gt;&lt;/a&gt;13.1 send &amp;amp; recv 函数
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch12</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch12/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch12/</id>
+    <published>2019-11-29T14:22:04.000Z</published>
+    <updated>2019-11-29T14:28:41.751Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-12-章-I-O-复用&quot;&gt;&lt;a href=&quot;#第-12-章-I-O-复用&quot; class=&quot;headerlink&quot; title=&quot;第 12 章 I/O 复用&quot;&gt;&lt;/a&gt;第 12 章 I/O 复用&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;h3 id=&quot;12-1-基于-I-O-复用的服务器端&quot;&gt;&lt;a href=&quot;#12-1-基于-I-O-复用的服务器端&quot; class=&quot;headerlink&quot; title=&quot;12.1 基于 I/O 复用的服务器端&quot;&gt;&lt;/a&gt;12.1 基于 I/O 复用的服务器端
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch11</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch11/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch11/</id>
+    <published>2019-11-29T14:21:58.000Z</published>
+    <updated>2019-11-29T14:28:31.468Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-11-章-进程间通信&quot;&gt;&lt;a href=&quot;#第-11-章-进程间通信&quot; class=&quot;headerlink&quot; title=&quot;第 11 章 进程间通信&quot;&gt;&lt;/a&gt;第 11 章 进程间通信&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;p&gt;进程间通信，意味着两个不同的进程中可以交换数据&lt;/p&gt;
+&lt;h3 id=&quot;11-1-进程间通信的基本概念&quot;&gt;&lt;a href=&quot;#11-1-进程间通信的基本概念&quot; class=&quot;headerlink&quot; title=&quot;11.1 进程间通信的基本概念&quot;&gt;&lt;/a&gt;11.1 进程间通信的基本概念
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch10</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch10/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch10/</id>
+    <published>2019-11-29T14:21:52.000Z</published>
+    <updated>2019-11-29T14:28:19.482Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-10-章-多进程服务器端&quot;&gt;&lt;a href=&quot;#第-10-章-多进程服务器端&quot; class=&quot;headerlink&quot; title=&quot;第 10 章 多进程服务器端&quot;&gt;&lt;/a&gt;第 10 章 多进程服务器端&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;h3 id=&quot;10-1-进程概念及应用&quot;&gt;&lt;a href=&quot;#10-1-进程概念及应用&quot; class=&quot;headerlink&quot; title=&quot;10.1 进程概念及应用&quot;&gt;&lt;/a&gt;10.1 进程概念及应用
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch09</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch09/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch09/</id>
+    <published>2019-11-29T14:21:48.000Z</published>
+    <updated>2019-11-29T14:28:05.459Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-9-章-套接字的多种可选项&quot;&gt;&lt;a href=&quot;#第-9-章-套接字的多种可选项&quot; class=&quot;headerlink&quot; title=&quot;第 9 章 套接字的多种可选项&quot;&gt;&lt;/a&gt;第 9 章 套接字的多种可选项&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;h3 id=&quot;9-1-套接字可选项和-I-O-缓冲大小&quot;&gt;&lt;a href=&quot;#9-1-套接字可选项和-I-O-缓冲大小&quot; class=&quot;headerlink&quot; title=&quot;9.1 套接字可选项和 I/O 缓冲大小&quot;&gt;&lt;/a&gt;9.1 套接字可选项和 I/O 缓冲大小
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch08</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch08/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch08/</id>
+    <published>2019-11-29T14:21:39.000Z</published>
+    <updated>2019-11-29T14:27:49.655Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-9-章-套接字的多种可选项&quot;&gt;&lt;a href=&quot;#第-9-章-套接字的多种可选项&quot; class=&quot;headerlink&quot; title=&quot;第 9 章 套接字的多种可选项&quot;&gt;&lt;/a&gt;第 9 章 套接字的多种可选项&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;h3 id=&quot;9-1-套接字可选项和-I-O-缓冲大小&quot;&gt;&lt;a href=&quot;#9-1-套接字可选项和-I-O-缓冲大小&quot; class=&quot;headerlink&quot; title=&quot;9.1 套接字可选项和 I/O 缓冲大小&quot;&gt;&lt;/a&gt;9.1 套接字可选项和 I/O 缓冲大小
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch07</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch07/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch07/</id>
+    <published>2019-11-29T14:21:34.000Z</published>
+    <updated>2019-11-29T14:27:36.799Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-7-章-优雅的断开套接字的连接&quot;&gt;&lt;a href=&quot;#第-7-章-优雅的断开套接字的连接&quot; class=&quot;headerlink&quot; title=&quot;第 7 章 优雅的断开套接字的连接&quot;&gt;&lt;/a&gt;第 7 章 优雅的断开套接字的连接&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;p&gt;本章讨论如何优雅的断开套接字的连接，之前用的方法不够优雅是因为，我们是调用 close 函数或 closesocket 函数单方面断开连接的。&lt;/p&gt;
+&lt;h3 id=&quot;7-1-基于-TCP-的半关闭&quot;&gt;&lt;a href=&quot;#7-1-基于-TCP-的半关闭&quot; class=&quot;headerlink&quot; title=&quot;7.1 基于 TCP 的半关闭&quot;&gt;&lt;/a&gt;7.1 基于 TCP 的半关闭
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch06</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch06/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch06/</id>
+    <published>2019-11-29T14:21:30.000Z</published>
+    <updated>2019-11-29T14:27:22.655Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-6-章-基于-UDP-的服务端-客户端&quot;&gt;&lt;a href=&quot;#第-6-章-基于-UDP-的服务端-客户端&quot; class=&quot;headerlink&quot; title=&quot;第 6 章 基于 UDP 的服务端/客户端&quot;&gt;&lt;/a&gt;第 6 章 基于 UDP 的服务端/客户端&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;p&gt;TCP 是内容较多的一个协议，而本章中的 UDP 内容较少，但是也很重要。&lt;/p&gt;
+&lt;h3 id=&quot;6-1-理解-UDP&quot;&gt;&lt;a href=&quot;#6-1-理解-UDP&quot; class=&quot;headerlink&quot; title=&quot;6.1 理解 UDP&quot;&gt;&lt;/a&gt;6.1 理解 UDP
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch05</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch05/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch05/</id>
+    <published>2019-11-29T14:21:24.000Z</published>
+    <updated>2019-11-29T14:27:11.543Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-5-章-基于-TCP-的服务端-客户端（2）&quot;&gt;&lt;a href=&quot;#第-5-章-基于-TCP-的服务端-客户端（2）&quot; class=&quot;headerlink&quot; title=&quot;第 5 章 基于 TCP 的服务端/客户端（2）&quot;&gt;&lt;/a&gt;第 5 章 基于 TCP 的服务端/客户端（2）&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;p&gt;上一章仅仅是从编程角度学习实现方法，并未详细讨论 TCP 的工作原理。因此，本章将想次讲解 TCP 中必要的理论知识，还将给出第 4 章客户端问题的解决方案。&lt;/p&gt;
+&lt;h3 id=&quot;5-1-回声客户端的完美实现&quot;&gt;&lt;a href=&quot;#5-1-回声客户端的完美实现&quot; class=&quot;headerlink&quot; title=&quot;5.1 回声客户端的完美实现&quot;&gt;&lt;/a&gt;5.1 回声客户端的完美实现
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch04</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch04/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch04/</id>
+    <published>2019-11-29T14:21:20.000Z</published>
+    <updated>2019-11-29T14:27:02.155Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-4-章-基于-TCP-的服务端-客户端（1）&quot;&gt;&lt;a href=&quot;#第-4-章-基于-TCP-的服务端-客户端（1）&quot; class=&quot;headerlink&quot; title=&quot;第 4 章 基于 TCP 的服务端/客户端（1）&quot;&gt;&lt;/a&gt;第 4 章 基于 TCP 的服务端/客户端（1）&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;h3 id=&quot;4-1-理解-TCP-和-UDP&quot;&gt;&lt;a href=&quot;#4-1-理解-TCP-和-UDP&quot; class=&quot;headerlink&quot; title=&quot;4.1 理解 TCP 和 UDP&quot;&gt;&lt;/a&gt;4.1 理解 TCP 和 UDP
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch03</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch03/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch03/</id>
+    <published>2019-11-29T14:21:16.000Z</published>
+    <updated>2019-11-29T14:26:48.110Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第-3-章-地址族与数据序列&quot;&gt;&lt;a href=&quot;#第-3-章-地址族与数据序列&quot; class=&quot;headerlink&quot; title=&quot;第 3 章 地址族与数据序列&quot;&gt;&lt;/a&gt;第 3 章 地址族与数据序列&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到。&lt;/p&gt;
+&lt;p&gt;把套接字比喻成电话，那么目前只安装了电话机，本章讲解给电话机分配号码的方法，即给套接字分配 IP 地址和端口号。&lt;/p&gt;
+&lt;h3 id=&quot;3-1-分配给套接字的-IP-地址与端口号&quot;&gt;&lt;a href=&quot;#3-1-分配给套接字的-IP-地址与端口号&quot; class=&quot;headerlink&quot; title=&quot;3.1 分配给套接字的 IP 地址与端口号&quot;&gt;&lt;/a&gt;3.1 分配给套接字的 IP 地址与端口号
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP_ch02</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch02/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch02/</id>
+    <published>2019-11-29T14:21:06.000Z</published>
+    <updated>2019-11-29T14:26:34.795Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;第二章-套接字类型与协议设置&quot;&gt;&lt;a href=&quot;#第二章-套接字类型与协议设置&quot; class=&quot;headerlink&quot; title=&quot;第二章 套接字类型与协议设置&quot;&gt;&lt;/a&gt;第二章 套接字类型与协议设置&lt;/h2&gt;&lt;p&gt;本章代码，在&lt;a href=&quot;https://github.com/riba2534/TCP-IP-NetworkNote&quot;&gt;TCP-IP-NetworkNote&lt;/a&gt;中可以找到，直接点连接可能进不去。&lt;/p&gt;
+&lt;p&gt;本章仅需了解创建套接字时调用的 socket 函数。&lt;/p&gt;
+&lt;h3 id=&quot;2-1-套接字协议及数据传输特性&quot;&gt;&lt;a href=&quot;#2-1-套接字协议及数据传输特性&quot; class=&quot;headerlink&quot; title=&quot;2.1 套接字协议及数据传输特性&quot;&gt;&lt;/a&gt;2.1 套接字协议及数据传输特性
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>TCP_ch01</title>
@@ -154,204 +381,6 @@
     
     
       <category term="计算机网络" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数值分析 学习笔记</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/20/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/20/数值分析-学习笔记/</id>
-    <published>2019-07-20T01:48:58.000Z</published>
-    <updated>2019-07-21T03:33:19.708Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Chapter-1-误差&quot;&gt;&lt;a href=&quot;#Chapter-1-误差&quot; class=&quot;headerlink&quot; title=&quot;Chapter 1 误差&quot;&gt;&lt;/a&gt;Chapter 1 误差&lt;/h2&gt;&lt;p&gt;误差：模型误差，观测误差，截断误差(方法误差)，舍入误差//前两种不可避免&lt;br&gt;总误差＝截断误差＋舍入误差\&lt;br&gt;由于相对误差可以很大，因此“应避免两个相近的数作减法”，以防止有效数字丢失。//所以遇到分式减法需要优化就通分，例1.4
-    
-    </summary>
-    
-      <category term="专业课相关" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%9B%B8%E5%85%B3/"/>
-    
-    
-      <category term="数值分析" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>安卓入门 学习笔记</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/%E5%AE%89%E5%8D%93%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/安卓入门-学习笔记/</id>
-    <published>2019-07-19T07:52:41.000Z</published>
-    <updated>2019-07-21T03:41:27.540Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;JDK-android-studio安装&quot;&gt;&lt;a href=&quot;#JDK-android-studio安装&quot; class=&quot;headerlink&quot; title=&quot;JDK + android studio安装&quot;&gt;&lt;/a&gt;JDK + android studio安装&lt;/h2&gt;&lt;p&gt;JDK和环境变量的配置；最新的android studio要求至少JDK1.8以上&lt;br&gt;去官网下载最新版本的android studio；&lt;br&gt;SDK可以下载android studio之后去settings里下载；&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="安卓学习" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E5%AE%89%E5%8D%93%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="安卓" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%AE%89%E5%8D%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XTU 1308 比赛</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1308-%E6%AF%94%E8%B5%9B/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1308-比赛/</id>
-    <published>2019-07-19T07:44:33.000Z</published>
-    <updated>2019-07-19T07:49:10.787Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;有n个人要进行比赛，比赛规则如下：&lt;br&gt;假设每轮比赛的人是m，取最大的k，k=2t且k≤m。这k个人每2人举行一场比赛，胜利者进入一下轮，失败者被淘汰。&lt;br&gt;余下的m-k个人，不进行比赛，直接进入下一轮
-    
-    </summary>
-    
-      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-      <category term="模拟" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XTU 1296 GCD</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1296-GCD/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1296-GCD/</id>
-    <published>2019-07-19T07:29:58.000Z</published>
-    <updated>2019-07-19T07:38:33.741Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;a和b的最大公约数(Greatest Common Divisor)是最大的d，d能整除a和b。&lt;br&gt;如果gcd(a,b)=1，我们就称a和b是互素的。
-    
-    </summary>
-    
-      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-      <category term="容斥" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%AE%B9%E6%96%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XTU 1294 Enquiry</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1294-Enquiry/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1294-Enquiry/</id>
-    <published>2019-07-19T07:09:30.000Z</published>
-    <updated>2019-07-19T07:39:05.219Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;男女同学排成一列，你想知道第i个到第j个同学之间，男女相邻排列的出现次数。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-      <category term="前缀和" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XTU 1291 Buying Gifts</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1291-Buying-Gifts/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1291-Buying-Gifts/</id>
-    <published>2019-07-19T06:32:45.000Z</published>
-    <updated>2019-07-19T07:39:33.836Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;快到年末了，Boss Liu准备在年会上发些礼物，由于不想礼物的价格区别太大，Boss Liu希望最好的礼物与最差的礼物价格相差越小越好。 当然，如果存在相同的选择，Boss Liu希望花的钱越少越好。&lt;br&gt;Boss Liu把这个买礼物的任务给你，你决定写个程序来帮助自己计算一下。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-      <category term="尺取" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%B0%BA%E5%8F%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XTU 1243 Bob&#39;s Password</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1243-Bob-s-Password/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1243-Bob-s-Password/</id>
-    <published>2019-07-19T06:16:04.000Z</published>
-    <updated>2019-07-19T07:40:43.774Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;Bob最新购入一款安卓手机，他发现安卓手机密码使用的是画线方式。&lt;br&gt;一共有9个点，我们按行列顺序依次为1~9。密码要求在点和点之间连线不能有还未曾经过的点。
-    
-    </summary>
-    
-      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>PAT 1039 到底买不买</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/PAT-1039-%E5%88%B0%E5%BA%95%E4%B9%B0%E4%B8%8D%E4%B9%B0/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/PAT-1039-到底买不买/</id>
-    <published>2019-07-19T06:11:20.000Z</published>
-    <updated>2019-07-19T07:40:53.997Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;小红想买些珠子做一串自己喜欢的珠串。卖珠子的摊主有很多串五颜六色的珠串，但是不肯把任何一串拆散了卖。于是小红要你帮忙判断一下，某串珠子里是否包含了全部自己想要的珠子？如果是，那么告诉她有多少多余的珠子；如果不是，那么告诉她缺了多少珠子。  &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="PAT" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/PAT/"/>
-    
-    
-      <category term="模拟" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XTU 1271 Color</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1271-Color/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1271-Color/</id>
-    <published>2019-07-19T05:56:03.000Z</published>
-    <updated>2019-07-19T07:39:50.542Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;Alice在玩一个游戏，她在一个m×n的格子里，随机涂黑k个格子。然后她每次可以把一行或者一列的格子染成红色，但是这一行中不能有黑色的格子。 请问她最多能把多少个格子涂成红色？&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-      <category term="数学" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XTU 1262 Fish(优先队列+贪心)</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1262-Fish-%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97-%E8%B4%AA%E5%BF%83/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1262-Fish-优先队列-贪心/</id>
-    <published>2019-07-19T05:45:17.000Z</published>
-    <updated>2019-07-19T07:40:26.859Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;小明很喜欢钓鱼，现在有n个池塘可以钓鱼，第i个池塘首次内能钓到ai条鱼。 第i个池塘如果被钓过k次，那么每次下一次能钓到的鱼的数目为max{0,ai−k×bi}。现在小明能钓m次鱼，请问他最多能钓到多少条鱼？&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-      <category term="贪心" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
