@@ -88,12 +88,12 @@
 
 
 
-<meta name="description" content="《TCP/IP网络编程》学习笔记:flags: 转自《TCP/IP网络编程》 第 1 章：理解网络编程和套接字本章代码，在TCP-IP-NetworkNote中可以找到，直接点连接可能进不去。 1.1 理解网络编程和套接字1.1.1构建打电话套接字以电话机打电话的方式来理解套接字。 调用 socket 函数（安装电话机）时进行的对话：  问：接电话需要准备什么？ 答：当然是电话机。  有了电话机才">
+<meta name="description" content="《TCP/IP网络编程》学习笔记:flags: 转自《TCP/IP网络编程》 第 1 章：理解网络编程和套接字">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TCP&#x2F;IP网络编程 学习笔记">
 <meta property="og:url" content="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-IP网络编程-学习笔记/index.html">
 <meta property="og:site_name" content="showKstage&#39;s Blog">
-<meta property="og:description" content="《TCP/IP网络编程》学习笔记:flags: 转自《TCP/IP网络编程》 第 1 章：理解网络编程和套接字本章代码，在TCP-IP-NetworkNote中可以找到，直接点连接可能进不去。 1.1 理解网络编程和套接字1.1.1构建打电话套接字以电话机打电话的方式来理解套接字。 调用 socket 函数（安装电话机）时进行的对话：  问：接电话需要准备什么？ 答：当然是电话机。  有了电话机才">
+<meta property="og:description" content="《TCP/IP网络编程》学习笔记:flags: 转自《TCP/IP网络编程》 第 1 章：理解网络编程和套接字">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2019/01/13/5c3ab0eb17bbe.png">
 <meta property="og:image" content="https://i.loli.net/2019/01/13/5c3ab19174fa4.png">
@@ -211,10 +211,10 @@
 <meta property="og:image" content="https://i.loli.net/2019/02/07/5c5c107deba11.png">
 <meta property="og:image" content="https://i.loli.net/2019/02/07/5c5c19cbb3718.png">
 <meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png">
-<meta property="og:updated_time" content="2019-11-29T14:35:16.279Z">
+<meta property="og:updated_time" content="2019-11-29T14:38:04.664Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TCP&#x2F;IP网络编程 学习笔记">
-<meta name="twitter:description" content="《TCP/IP网络编程》学习笔记:flags: 转自《TCP/IP网络编程》 第 1 章：理解网络编程和套接字本章代码，在TCP-IP-NetworkNote中可以找到，直接点连接可能进不去。 1.1 理解网络编程和套接字1.1.1构建打电话套接字以电话机打电话的方式来理解套接字。 调用 socket 函数（安装电话机）时进行的对话：  问：接电话需要准备什么？ 答：当然是电话机。  有了电话机才">
+<meta name="twitter:description" content="《TCP/IP网络编程》学习笔记:flags: 转自《TCP/IP网络编程》 第 1 章：理解网络编程和套接字">
 <meta name="twitter:image" content="https://i.loli.net/2019/01/13/5c3ab0eb17bbe.png">
 
 
@@ -455,7 +455,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-29T22:35:16+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-11-29T22:38:04+08:00">
                 2019-11-29
               </time>
             
@@ -490,7 +490,7 @@
 
       
         <h1 id="《TCP-IP网络编程》学习笔记"><a href="#《TCP-IP网络编程》学习笔记" class="headerlink" title="《TCP/IP网络编程》学习笔记"></a>《TCP/IP网络编程》学习笔记</h1><p>:flags: 转自《TCP/IP网络编程》</p>
-<h2 id="第-1-章：理解网络编程和套接字"><a href="#第-1-章：理解网络编程和套接字" class="headerlink" title="第 1 章：理解网络编程和套接字"></a>第 1 章：理解网络编程和套接字</h2><p>本章代码，在<a href="https://github.com/riba2534/TCP-IP-NetworkNote">TCP-IP-NetworkNote</a>中可以找到，直接点连接可能进不去。</p>
+<h2 id="第-1-章：理解网络编程和套接字"><a href="#第-1-章：理解网络编程和套接字" class="headerlink" title="第 1 章：理解网络编程和套接字"></a>第 1 章：理解网络编程和套接字<a id="more"></a></h2><p>本章代码，在<a href="https://github.com/riba2534/TCP-IP-NetworkNote">TCP-IP-NetworkNote</a>中可以找到，直接点连接可能进不去。</p>
 <h3 id="1-1-理解网络编程和套接字"><a href="#1-1-理解网络编程和套接字" class="headerlink" title="1.1 理解网络编程和套接字"></a>1.1 理解网络编程和套接字</h3><h4 id="1-1-1构建打电话套接字"><a href="#1-1-1构建打电话套接字" class="headerlink" title="1.1.1构建打电话套接字"></a>1.1.1构建打电话套接字</h4><p>以电话机打电话的方式来理解套接字。</p>
 <p><strong>调用 socket 函数（安装电话机）时进行的对话</strong>：</p>
 <blockquote>
