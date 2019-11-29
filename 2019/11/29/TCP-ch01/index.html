@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="TCP,">
 
 
 
@@ -88,16 +88,18 @@
 
 
 
-<meta name="description" content="showKstage.github.io showKstage.coding.me">
-<meta property="og:type" content="website">
-<meta property="og:title" content="showKstage&#39;s Blog">
-<meta property="og:url" content="https://github.com/showKstage/showKstage.github.io.git/index.html">
+<meta name="description" content="��һ�£����������̺��׽������´��룬��TCP-IP-NetworkNote�п����ҵ���ֱ�ӵ����ӿ��ܽ���ȥ�� 1.1 ���������̺��׽���1.1.1������绰�׽����Ե绰����绰�ķ�ʽ�������׽��֡� ���� socket ��������װ�绰����ʱ���еĶԻ���  �ʣ��ӵ绰��Ҫ׼��ʲô�� �𣺵�Ȼ">
+<meta name="keywords" content="TCP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TCP_ch01">
+<meta property="og:url" content="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch01/index.html">
 <meta property="og:site_name" content="showKstage&#39;s Blog">
-<meta property="og:description" content="showKstage.github.io showKstage.coding.me">
+<meta property="og:description" content="��һ�£����������̺��׽������´��룬��TCP-IP-NetworkNote�п����ҵ���ֱ�ӵ����ӿ��ܽ���ȥ�� 1.1 ���������̺��׽���1.1.1������绰�׽����Ե绰����绰�ķ�ʽ�������׽��֡� ���� socket ��������װ�绰����ʱ���еĶԻ���  �ʣ��ӵ绰��Ҫ׼��ʲô�� �𣺵�Ȼ">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-29T14:09:59.796Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="showKstage&#39;s Blog">
-<meta name="twitter:description" content="showKstage.github.io showKstage.coding.me">
+<meta name="twitter:title" content="TCP_ch01">
+<meta name="twitter:description" content="��һ�£����������̺��׽������´��룬��TCP-IP-NetworkNote�п����ҵ���ֱ�ӵ����ӿ��ܽ���ȥ�� 1.1 ���������̺��׽���1.1.1������绰�׽����Ե绰����绰�ķ�ʽ�������׽��֡� ���� socket ��������װ�绰����ʱ���еĶԻ���  �ʣ��ӵ绰��Ҫ׼��ʲô�� �𣺵�Ȼ">
 
 
 
@@ -127,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/showKstage/showKstage.github.io.git/">
+  <link rel="canonical" href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-ch01/">
 
 
 
 
 
-  <title>showKstage's Blog</title>
+  <title>TCP_ch01 | showKstage's Blog</title>
   
 
 
@@ -152,8 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,9 +279,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -310,9 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/11/29/TCP-ch01/" itemprop="url">TCP_ch01</a></h1>
+          <h1 class="post-title" itemprop="name headline">TCP_ch01</h1>
         
 
         <div class="post-meta">
@@ -374,9 +373,7 @@
       
 
       
-        
-          
-            <h2 id="��һ�£����������̺��׽���"><a href="#��һ�£����������̺��׽���" class="headerlink" title="��һ�£����������̺��׽���"></a>��һ�£����������̺��׽���</h2><p>���´��룬��<a href="https://github.com/riba2534/TCP-IP-NetworkNote">TCP-IP-NetworkNote</a>�п����ҵ���ֱ�ӵ����ӿ��ܽ���ȥ��</p>
+        <h2 id="��һ�£����������̺��׽���"><a href="#��һ�£����������̺��׽���" class="headerlink" title="��һ�£����������̺��׽���"></a>��һ�£����������̺��׽���</h2><p>���´��룬��<a href="https://github.com/riba2534/TCP-IP-NetworkNote">TCP-IP-NetworkNote</a>�п����ҵ���ֱ�ӵ����ӿ��ܽ���ȥ��</p>
 <h3 id="1-1-���������̺��׽���"><a href="#1-1-���������̺��׽���" class="headerlink" title="1.1 ���������̺��׽���"></a>1.1 ���������̺��׽���</h3><h4 id="1-1-1������绰�׽���"><a href="#1-1-1������绰�׽���" class="headerlink" title="1.1.1������绰�׽���"></a>1.1.1������绰�׽���</h4><p>�Ե绰����绰�ķ�ʽ�������׽��֡�</p>
 <p><strong>���� socket ��������װ�绰����ʱ���еĶԻ�</strong>��</p>
 <blockquote>
@@ -570,8 +567,6 @@
 </li>
 </ol>
 
-          
-        
       
     </div>
     
@@ -586,14 +581,36 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/TCP/" rel="tag"># TCP</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/05/PAT-Basic-Level-Practice/" rel="next" title="PAT (Basic Level) Practice">
+                <i class="fa fa-chevron-left"></i> PAT (Basic Level) Practice
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -603,1442 +620,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/08/05/PAT-Basic-Level-Practice/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/05/PAT-Basic-Level-Practice/" itemprop="url">PAT (Basic Level) Practice</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-05T17:20:41+08:00">
-                2019-08-05
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-08-15T17:56:03+08:00">
-                2019-08-15
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PAT/" itemprop="url" rel="index">
-                    <span itemprop="name">PAT</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>&ensp;&ensp;&ensp;&ensp;下半年会陆续考乙级和甲级，今天刚刷完乙级的所有题目，想着来总结一下，觉着一个一个分开写太麻烦，于是就这篇博客将所有题目放在一起进行总结。
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/08/05/PAT-Basic-Level-Practice/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1054-求平均值/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/23/PAT-1054-求平均值/" itemprop="url">PAT 1054 求平均值</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-23T21:44:55+08:00">
-                2019-07-23
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-23T21:52:17+08:00">
-                2019-07-23
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PAT/" itemprop="url" rel="index">
-                    <span itemprop="name">PAT</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>本题的基本要求非常简单：给定 N 个实数，计算它们的平均值。但复杂的是有些输入数据可能是非法的。一个“合法”的输入是 [−1000,1000] 区间内的实数，
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/23/PAT-1054-求平均值/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1052-卖个萌/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/23/PAT-1052-卖个萌/" itemprop="url">PAT 1052 卖个萌</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-23T21:29:40+08:00">
-                2019-07-23
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-23T22:05:03+08:00">
-                2019-07-23
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PAT/" itemprop="url" rel="index">
-                    <span itemprop="name">PAT</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>萌萌哒表情符号通常由“手”、“眼”、“口”三个主要部分组成。简单起见，我们假设一个表情符号是按下列格式输出的：</p>
-<blockquote>
-<p>[左手] ([左眼][口][右眼]) [右手]</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/23/PAT-1052-卖个萌/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-螺旋矩阵/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/23/PAT-1050-螺旋矩阵/" itemprop="url">PAT 1050 螺旋矩阵</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-23T17:18:00+08:00">
-                2019-07-23
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-23T21:43:50+08:00">
-                2019-07-23
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PAT/" itemprop="url" rel="index">
-                    <span itemprop="name">PAT</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>本题要求将给定的 N 个正整数按非递增的顺序，填入“螺旋矩阵”。所谓“螺旋矩阵”，是指从左上角第 1 个格子开始，按顺时针螺旋方向填充。要求矩阵的规模为 m 行 n 列，
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/23/PAT-1050-螺旋矩阵/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1049-数列的片段和/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/23/PAT-1049-数列的片段和/" itemprop="url">PAT 1049 数列的片段和</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-23T17:18:00+08:00">
-                2019-07-23
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-23T17:25:51+08:00">
-                2019-07-23
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PAT/" itemprop="url" rel="index">
-                    <span itemprop="name">PAT</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个正数数列，我们可以从中截取任意的连续的几个数，称为片段。例如，给定数列 { 0.1, 0.2, 0.3, 0.4 }，我们有 (0.1) (0.1, 0.2) (0.1, 0.2, 0.3) (0.1, 0.2, 0.3, 0.4) (0.2) (0.2, 0.3) (0.2, 0.3, 0.4) (0.3) (0.3, 0.4) (0.4) 这 10 个片段。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/23/PAT-1049-数列的片段和/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/20/计算机网络-学习笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/20/计算机网络-学习笔记/" itemprop="url">计算机网络 学习笔记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-20T10:35:53+08:00">
-                2019-07-20
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-20T10:59:02+08:00">
-                2019-07-20
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/专业课相关/" itemprop="url" rel="index">
-                    <span itemprop="name">专业课相关</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><ol>
-<li>三网：电信网络，有线电视网络，计算机网络</li>
-<li>Internet：因特网 internet：互联网/互连网</li>
-<li>在网络核心部分起特殊作用的是路由器，路由器转发收到的分组就是实现分组交换。
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/20/计算机网络-学习笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </li></ol></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/20/数值分析-学习笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/20/数值分析-学习笔记/" itemprop="url">数值分析 学习笔记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-20T09:48:58+08:00">
-                2019-07-20
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-21T11:33:19+08:00">
-                2019-07-21
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/专业课相关/" itemprop="url" rel="index">
-                    <span itemprop="name">专业课相关</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Chapter-1-误差"><a href="#Chapter-1-误差" class="headerlink" title="Chapter 1 误差"></a>Chapter 1 误差</h2><p>误差：模型误差，观测误差，截断误差(方法误差)，舍入误差//前两种不可避免<br>总误差＝截断误差＋舍入误差\<br>由于相对误差可以很大，因此“应避免两个相近的数作减法”，以防止有效数字丢失。//所以遇到分式减法需要优化就通分，例1.4
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/20/数值分析-学习笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/安卓入门-学习笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/19/安卓入门-学习笔记/" itemprop="url">安卓入门 学习笔记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-19T15:52:41+08:00">
-                2019-07-19
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-21T11:41:27+08:00">
-                2019-07-21
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/安卓学习/" itemprop="url" rel="index">
-                    <span itemprop="name">安卓学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="JDK-android-studio安装"><a href="#JDK-android-studio安装" class="headerlink" title="JDK + android studio安装"></a>JDK + android studio安装</h2><p>JDK和环境变量的配置；最新的android studio要求至少JDK1.8以上<br>去官网下载最新版本的android studio；<br>SDK可以下载android studio之后去settings里下载；</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/19/安卓入门-学习笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1308-比赛/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="showKstage">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/duck.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="showKstage's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/19/XTU-1308-比赛/" itemprop="url">XTU 1308 比赛</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-19T15:44:33+08:00">
-                2019-07-19
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-19T15:49:10+08:00">
-                2019-07-19
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/程序设计实践/" itemprop="url" rel="index">
-                    <span itemprop="name">程序设计实践</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>有n个人要进行比赛，比赛规则如下：<br>假设每轮比赛的人是m，取最大的k，k=2t且k≤m。这k个人每2人举行一场比赛，胜利者进入一下轮，失败者被淘汰。<br>余下的m-k个人，不进行比赛，直接进入下一轮
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/19/XTU-1308-比赛/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
 
 
           </div>
@@ -2046,6 +632,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -2066,8 +656,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -2152,6 +751,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#��һ�£����������̺��׽���"><span class="nav-number">1.</span> <span class="nav-text">��һ�£����������̺��׽���</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-���������̺��׽���"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 ���������̺��׽���</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-1������绰�׽���"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1������绰�׽���</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-2-��дHello-World�׽��ֳ���"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.1.2  ��дHello World�׽��ֳ���</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-����-Linux-���l�����"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 ���� Linux ���ļ�����</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-1-�ײ���ʺ��l�������"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.2.1 �ײ���ʺ��ļ�������</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-2-���l�"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2.2 ���ļ�:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-3-�ر��l���"><span class="nav-number">1.2.3.</span> <span class="nav-text">1.2.3 �ر��ļ���</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-4-������д���l���"><span class="nav-number">1.2.4.</span> <span class="nav-text">1.2.4 ������д���ļ���</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-5-��ȡ�l��е����ݣ�"><span class="nav-number">1.2.5.</span> <span class="nav-text">1.2.5 ��ȡ�ļ��е����ݣ�</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-6-�l����������׽���"><span class="nav-number">1.2.6.</span> <span class="nav-text">1.2.6 �ļ����������׽���</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-����-Windows-ƽ̨��ʵ��"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 ���� Windows ƽ̨��ʵ��</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-����-Windows-���׽�����غ�����ʾ��"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 ���� Windows ���׽�����غ�����ʾ��</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-ϰ��"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 ϰ��</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -2297,6 +912,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
