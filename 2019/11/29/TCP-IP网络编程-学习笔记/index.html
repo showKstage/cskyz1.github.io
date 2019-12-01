@@ -177,7 +177,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/01/27/5c4d3960001eb.png">
 <meta property="og:image" content="https://i.loli.net/2019/01/28/5c4e85a9aabcc.png">
 <meta property="og:image" content="https://i.loli.net/2019/01/28/5c4e9113368dd.png">
-<meta property="og:updated_time" content="2019-11-30T09:23:06.186Z">
+<meta property="og:updated_time" content="2019-12-01T13:24:21.904Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TCP&#x2F;IP网络编程 学习笔记">
 <meta name="twitter:description" content="《TCP/IP网络编程》学习笔记:flags: 转自《TCP/IP网络编程》 第 1 章：理解网络编程和套接字">
@@ -421,8 +421,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-30T17:23:06+08:00">
-                2019-11-30
+              <time title="更新于" itemprop="dateModified" datetime="2019-12-01T21:24:21+08:00">
+                2019-12-01
               </time>
             
           </span>
@@ -802,7 +802,7 @@
 <p>因此套接字手法数据时，数据传到网络后即可轻松找到主机。</p>
 <h4 id="3-1-3-用于区分套接字的端口号"><a href="#3-1-3-用于区分套接字的端口号" class="headerlink" title="3.1.3 用于区分套接字的端口号"></a>3.1.3 用于区分套接字的端口号</h4><p>IP地址用于区分计算机，只要有IP地址就能向目标主机传输数据，但是只有这些还不够，我们需要把信息传输给具体的应用程序。</p>
 <p>所以计算机一般有 NIC（网络接口卡）数据传输设备。通过 NIC 接受的数据内有端口号，操作系统参考端口号把信息传给相应的应用程序。</p>
-<p>端口号由 16 位构成，可分配的端口号范围是 0<del>65535 。但是 0</del>1023 是知名端口，一般分配给特定的应用程序，所以应当分配给此范围之外的值。</p>
+<p>端口号由 16 位构成，可分配的端口号范围是 0 ~ 65535 。但是 0 ~ 1023 是知名端口，一般分配给特定的应用程序，所以应当分配给此范围之外的值。</p>
 <p>虽然端口号不能重复，但是 TCP 套接字和 UDP 套接字不会共用端接口号，所以允许重复。如果某 TCP 套接字使用了 9190 端口号，其他 TCP 套接字就无法使用该端口号，但是 UDP 套接字可以使用。</p>
 <p>总之，数据传输目标地址同时包含IP地址和端口号，只有这样，数据才会被传输到最终的目的应用程序。</p>
 <h3 id="3-2-地址信息的表示"><a href="#3-2-地址信息的表示" class="headerlink" title="3.2 地址信息的表示"></a>3.2 地址信息的表示</h3><p>应用程序中使用的IP地址和端口号以结构体的形式给出了定义。本节围绕结构体讨论目标地址的表示方法。</p>
