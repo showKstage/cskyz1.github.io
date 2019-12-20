@@ -17,47 +17,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[PAT 1054 求平均值]]></title>
-    <url>%2F2019%2F07%2F23%2FPAT-1054-%E6%B1%82%E5%B9%B3%E5%9D%87%E5%80%BC%2F</url>
-    <content type="text"><![CDATA[题目本题的基本要求非常简单：给定 N 个实数，计算它们的平均值。但复杂的是有些输入数据可能是非法的。一个“合法”的输入是 [−1000,1000] 区间内的实数，并且最多精确到小数点后 2 位。当你计算平均值的时候，不能把那些非法的数据算在内。 输入格式：输入第一行给出正整数 N（≤100）。随后一行给出 N 个实数，数字间以一个空格分隔。 输出格式：对每个非法输入，在一行中输出 ERROR: X is not a legal number，其中 X 是输入。最后在一行中输出结果：The average of K numbers is Y，其中 K 是合法输入的个数，Y 是它们的平均值，精确到小数点后 2 位。如果平均值无法计算，则用 Undefined 替换 Y。如果 K 为 1，则输出 The average of 1 number is Y。 输入样例 1：75 -3.2 aaa 9999 2.3.4 7.123 2.35 输出样例 1：ERROR: aaa is not a legal numberERROR: 9999 is not a legal numberERROR: 2.3.4 is not a legal numberERROR: 7.123 is not a legal numberThe average of 3 numbers is 1.38 输入样例 2：2aaa -9999 输出样例 2：ERROR: aaa is not a legal numberERROR: -9999 is not a legal numberThe average of 0 numbers is Undefined 记录一下：sscanf() – 从一个字符串中读进与指定格式相符的数据即把字符数组a中的内容以”%lf”的格式写道temp中，从左至右sprintf() – 字符串格式化命令，主要功能是把格式化的数据写入某个字符串中。即把temp以”%.2lf”的形式写到b字符数组中，从右至左 思路：可以用JAVA异常处理比较方便，c++的话就直接判断 1234567891011121314151617181920212223242526272829303132333435363738#include &lt;bits/stdc++.h&gt;using namespace std;// sscanf() – 从一个字符串中读进与指定格式相符的数据,//把字符数组a中的内容以"%lf"的格式写道temp中，从左至右// sprintf() – 字符串格式化命令，主要功能是把格式化的数据写入某个字符串中。//把temp以"%.2lf"的形式写到b字符数组中，从右至左int main() &#123; int n, cnt = 0; char a[50], b[50]; double temp, sum = 0.0; cin &gt;&gt; n; for (int i = 0; i &lt; n; i++) &#123; scanf("%s", a); sscanf(a, "%lf", &amp;temp); sprintf(b, "%.2f", temp); int ok = 0; for (int j = 0; j &lt; strlen(a); j++) &#123; if (a[j] != b[j]) &#123; ok = 1; break; &#125; &#125; if (ok || temp &lt; -1000 || temp &gt; 1000) &#123; printf("ERROR: %s is not a legal number\n", a); &#125; else &#123; sum += temp; cnt++; &#125; &#125; if (cnt == 1) &#123; printf("The average of 1 number is %.2f", sum); &#125; else if (cnt &gt; 1) &#123; printf("The average of %d numbers is %.2f", cnt, sum * 1.0 / cnt); &#125; else &#123; printf("The average of 0 numbers is Undefined"); &#125; system("pause");&#125; 1234567891011121314151617181920212223242526272829303132333435363738import java.util.Scanner; public class Main &#123; public static void main(String[] args) &#123; Scanner in = new Scanner(System.in); int n = in.nextInt(); int cnt = 0; double y = 0; for (int i = 0; i &lt; n; i++) &#123; double x = 0; String s = null; try &#123; s = in.next(); x = Double.parseDouble(s); double temp = Double.parseDouble(String.format("%.2f", x)); if (x &gt; 1000 || x &lt; -1000 || Math.abs(temp - x) &gt;= 0.001) &#123; throw new NumberFormatException(); &#125; cnt++; y += x; &#125; catch (NumberFormatException e) &#123; System.out.println("ERROR: " + s + " is not a legal number"); &#125; &#125; in.close(); if (cnt == 0) &#123; System.out.println("The average of 0 numbers is Undefined"); &#125; else if (cnt == 1) &#123; System.out.printf("The average of 1 number is %.2f", y); &#125; else &#123; System.out.printf("The average of %d numbers is %.2f", cnt, y / cnt); &#125; &#125; &#125;]]></content>
-      <categories>
-        <category>PAT</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[PAT 1052 卖个萌]]></title>
-    <url>%2F2019%2F07%2F23%2FPAT-1052-%E5%8D%96%E4%B8%AA%E8%90%8C%2F</url>
-    <content type="text"><![CDATA[题目萌萌哒表情符号通常由“手”、“眼”、“口”三个主要部分组成。简单起见，我们假设一个表情符号是按下列格式输出的： [左手] ([左眼][口][右眼]) [右手] 现给出可选用的符号集合，请你按用户的要求输出表情。 输入格式：输入首先在前三行顺序对应给出手、眼、口的可选符号集。每个符号括在一对方括号 [ ]内。题目保证每个集合都至少有一个符号，并不超过 10 个符号；每个符号包含 1 到 4 个非空字符。 之后一行给出一个正整数 K，为用户请求的个数。随后 K 行，每行给出一个用户的符号选择，顺序为左手、左眼、口、右眼、右手——这里只给出符号在相应集合中的序号（从 1 开始），数字间以空格分隔。 输出格式：对每个用户请求，在一行中输出生成的表情。若用户选择的序号不存在，则输出 Are you kidding me? @/@。 输入样例：[╮][╭][o][][/] [&lt;][&gt;] [╯][╰][^][-][=][&gt;][&lt;][@][⊙][Д][▽][_][ε][^] …41 1 2 2 26 8 1 5 53 3 4 3 32 10 3 9 3 输出样例：╮(╯▽╰)╭&lt;(@Д=)/~o(^ε^)oAre you kidding me? @/@ 思路：因为不知道一行有多少个表情，所以用一个string类型的不定长二维数组vector存储表情包，以及可以调用v.size()顺便解决不知道一行有多少个表情的问题不定长数组共三行，分别对应输入用例的三行，只不过在存储如数组之前把它们的方括号去掉在存储，这里可以用string的substr方法实现然后根据输入的数字序号输出对应的表情注意：1.“Are you kidding me? @/@”的’\’是转义字符，想要输出’\’就要用’\’表示，‘%’也是同理，要想输出需要‘%%’才可以2.第一个测试点里面包含了空格，所以用cin会失败的，要用getline才能读入一行字符串 123456789101112131415161718192021222324252627282930313233343536#include &lt;bits/stdc++.h&gt;using namespace std;int main() &#123; vector&lt;vector&lt;string&gt; &gt; v;//string v[10][10]; for (int i = 0; i &lt; 3; ++i) &#123; string s; getline(cin, s); vector&lt;string&gt; v1;//string v1[10]; for (int j = 0, k = 0; j &lt; s.length(); ++j) &#123; if (s[j] == '[') &#123; while (k++ &lt; s.length()) &#123; if (s[k] == ']') &#123; v1.push_back(s.substr(j + 1, k - j - 1)); break; &#125; &#125; &#125; &#125; v.push_back(v1); &#125; int n; scanf("%d", &amp;n); for (int i = 0; i &lt; n; ++i) &#123; int a, b, c, d, e; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d &gt;&gt; e; if (a &gt; v[0].size() || b &gt; v[1].size() || c &gt; v[2].size() || d &gt; v[1].size() || e &gt; v[0].size() || a &lt; 1 || b &lt; 1 || c &lt; 1 || d &lt; 1 || e &lt; 1) &#123; cout &lt;&lt; "Are you kidding me? @\\/@" &lt;&lt; endl; continue; &#125; cout &lt;&lt; v[0][a - 1] &lt;&lt; "(" &lt;&lt; v[1][b - 1] &lt;&lt; v[2][c - 1] &lt;&lt; v[1][d - 1] &lt;&lt; ")" &lt;&lt; v[0][e - 1] &lt;&lt; endl; &#125; system("pause");&#125;]]></content>
-      <categories>
-        <category>PAT</category>
-      </categories>
-      <tags>
-        <tag>字符串</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[PAT 1049 数列的片段和]]></title>
-    <url>%2F2019%2F07%2F23%2FPAT-1049-%E6%95%B0%E5%88%97%E7%9A%84%E7%89%87%E6%AE%B5%E5%92%8C%2F</url>
-    <content type="text"><![CDATA[题目给定一个正数数列，我们可以从中截取任意的连续的几个数，称为片段。例如，给定数列 { 0.1, 0.2, 0.3, 0.4 }，我们有 (0.1) (0.1, 0.2) (0.1, 0.2, 0.3) (0.1, 0.2, 0.3, 0.4) (0.2) (0.2, 0.3) (0.2, 0.3, 0.4) (0.3) (0.3, 0.4) (0.4) 这 10 个片段。 给定正整数数列，求出全部片段包含的所有的数之和。如本例中 10 个片段总和是 0.1 + 0.3 + 0.6 + 1.0 + 0.2 + 0.5 + 0.9 + 0.3 + 0.7 + 0.4 = 5.0。 输入格式：输入第一行给出一个不超过 10^5的正整数 N，表示数列中数的个数，第二行给出 N 个不超过 1.0 的正数，是数列中的数，其间以空格分隔。 输出格式：在一行中输出该序列所有片段包含的数之和，精确到小数点后 2 位。 输入样例：4 0.1 0.2 0.3 0.4 输出样例：5.00 思路：第一次直接模拟，结果直接超时，后来发现可以推公式，即先算出右边包括其本身出现的次数，是n-i，那么他左边的次数就是i+1，比如3之前有1、2，那么2 * 右边的次数 * a[i] 就是ans，因为对于1可以和右边的3，（3，4）组合即，123，1234，2也可以组成23，234，所以排列组合得ans = 左边的个数 * 右边的个数 * a[i]; 12345678910111213141516171819202122232425#include &lt;bits/stdc++.h&gt;using namespace std;double a[100005];int main() &#123; int n; scanf("%d", &amp;n); double sum = 0.00; for (int i = 0; i &lt; n; ++i) &#123; scanf("%lf", &amp;a[i]); sum += (i + 1) * a[i] * (n - i); &#125; //先算出右边包括其本身出现的次数，是n-i，那么他左边的次数就是i+1，比如3之前有1、2，那么2*右边的次数*a[i]就是大小， //因为对于1可以和右边的3，（3，4）组合即，123，1234，2也可以组成23，234， //所以排列组合得ans=左边的个数*右边的个数*a[i]; // for (int i = 0; i &lt; n; ++i) &#123; //每次选一个数 // for (int j = 0; j &lt; n - i; ++j) &#123; //一个数、两个数、三个数... // for (int k = i; k &lt; n - j; ++k) &#123; //累加 // sum += a[k]; // &#125; // &#125; // &#125;TLE printf("%.2lf\n", sum); system("pause");&#125;]]></content>
-      <categories>
-        <category>PAT</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[PAT 1050 螺旋矩阵]]></title>
-    <url>%2F2019%2F07%2F23%2FPAT-1050-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5%2F</url>
-    <content type="text"><![CDATA[题目本题要求将给定的 N 个正整数按非递增的顺序，填入“螺旋矩阵”。所谓“螺旋矩阵”，是指从左上角第 1 个格子开始，按顺时针螺旋方向填充。要求矩阵的规模为 m 行 n 列，满足条件：m×n 等于 N；m≥n；且 m−n 取所有可能值中的最小值。 输入格式：输入在第 1 行中给出一个正整数 N，第 2 行给出 N 个待填充的正整数。所有数字不超过 10^4，相邻数字以空格分隔。 输出格式：输出螺旋矩阵。每行 n 个数字，共 m 行。相邻数字以 1 个空格分隔，行末不得有多余空格。 输入样例：12 37 76 20 98 76 42 53 95 60 81 58 93 输出样例：98 95 9342 37 8153 20 7658 60 76 思路：这题单纯只是想记录下找出N的两个差值最小的约数，即sqrt（N）前后的两个数,大的为m,小的为n即可，螺旋矩阵就直接按右、下、左、上模拟即可 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647#include &lt;bits/stdc++.h&gt;using namespace std;int cmp(int x, int y) &#123; return x &gt; y; &#125;int main() &#123; int N, c, r; cin &gt;&gt; N; for (r = sqrt(N); r &gt;= 1; r--) &#123; if (N % r == 0) &#123; c = N / r; break; &#125; &#125; int a[N + 5], b[c + 5][r + 5]; memset(a, 0, sizeof(a)); memset(b, 0, sizeof(b)); for (int i = 0; i &lt; N; ++i) cin &gt;&gt; a[i]; sort(a, a + N, cmp); b[0][0] = a[0]; int t = 0, x = 0, y = 0; while (t &lt; r * c) &#123; while (y + 1 &lt; r &amp;&amp; !b[x][y + 1]) &#123; y++, t++; b[x][y] = a[t]; &#125; while (x + 1 &lt; c &amp;&amp; !b[x + 1][y]) &#123; x++, t++; b[x][y] = a[t]; &#125; while (y - 1 &gt;= 0 &amp;&amp; !b[x][y - 1]) &#123; y--, t++; b[x][y] = a[t]; &#125; while (x - 1 &gt;= 0 &amp;&amp; !b[x - 1][y]) &#123; x--, t++; b[x][y] = a[t]; &#125; &#125; for (int i = 0; i &lt; c; ++i) &#123; for (int j = 0; j &lt; r; ++j) &#123; if (j == r - 1) printf("%d\n", b[i][j]); else printf("%d ", b[i][j]); &#125; &#125; system("pause");&#125;]]></content>
-      <categories>
-        <category>PAT</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[计算机网络 学习笔记]]></title>
     <url>%2F2019%2F07%2F20%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[一、概述 三网：电信网络，有线电视网络，计算机网络 Internet：因特网 internet：互联网/互连网 在网络核心部分起特殊作用的是路由器，路由器转发收到的分组就是实现分组交换。 两类通信方式： 客户-服务器模式（C/S）: 客户是服务的请求方，服务器是服务的提供方 客户程序： 1. 客户程序被用户调用后，在通信时主动向远地服务器发起通信请求服务，因此，客户程序必须知道服务器的地址 2. 不需要特殊的硬件以及复杂的操作系统。 服务器程序： 1. 服务器程序是一种专门用来提供服务的程序，可同时处理多个远地或本地客户的请求。 2.系统启动后一直不断地运行着，被动地等待并接受来自各地用户的请求。因此，服务器程序不需要知道客户程序的地址 对等连接方式（P2P）：表示两个主机在通信时并不区分哪一个是服务请求方还是服务提供方，是对等的连接通信。即既是客户端又是服务端。5. 点到点：相邻结点之间的通信，中间无中转站 端到端：终端到终端，中间有很多结点 总的来说就是端到端就是由无数的点到点组成和实现的。 试比较三种主要交换技术的优缺点。 1.电路交换：在数据传输之前必须设置一条专用的物理通路，在通话的全部时间内，通话的两个用户始终占用端到端的通信资源。优点是快速、可靠、保序、适用于连续传送大量数据。缺点就是传送计算机数据时线路的传输效率往往很低。 2.报文交换：不需要预先分配传输带宽，动态逐段利用传输带宽对突发式数据通信效率高，通信迅速。缺点是存储转发造成的时延较长。 3.分组交换：把报文分割成固定长度的分组，采用“存储转发”原理传输，经路由器储存转发，到达目标结点后重新组装成报文并且不需要预先分配传输带宽，优点是高效、灵活、迅速、可靠，缺点是存储转发会造成时延，分组必须携带的首部造成一定的开销。 例. 试在下列条件下比较电路交换和分组交换。要传送的报文共x（bit）。从源点到终点共经过k段链路，每段链路的传播时延为d（s），数据率为b(b/s)。在电路交换时电路的建立时间为s(s)。在分组交换时分组长度为p(bit)，且各结点的排队等待时间可忽略不计。问在怎样的条件下，分组交换的时延比电路交换的要小？（提示：画一下草图观察k段链路共有几个结点。） 答：线路交换时延：kd+x/b+s, 分组交换时延：kd+(x/p)(p/b)+ (k-1)(p/b)，其中(k-1)(p/b)表示K段传输中，有(k-1)次的储存转发延迟，当s&gt;(k-1)(p/b)时，电路交换的时延比分组交换的时延大，当x&gt;&gt;p,相反。 主机是为用户进行信息处理的，路由器则是对分组进行存储转发，即进行分组交换 早期的面向终端的计算机网络是以单个主机为中心的星形网分组交换网则是以网络为中心，主机都处在网络的外围 按作用范围：WAN(广域网），MAN（城域网），LAN（局域网），PAN（个人区域与网）； 计算机网络的性能指标：速率，带宽，吞吐量，时延，时延带宽积，往返时间，利用率对于高速网络链路，我们提高的仅仅是数据的发送速率而不是比特在链路上的传播速率，提高数据的发送速率只是减小了数据的发送时延D = D0/(1-U)，U为利用率，D为时延，因此利用率不是越高越好。减少方法：增大线路的带宽。总时延 = 发送时延 + 传送时延 + 处理时延 + 排队时延 计算机网络的非性能指标：费用，质量，标准化，可靠性，可扩展性和可升级性，易于管理和维护 协议分层的好处：1.各层之间是相互独立的；2.灵活性好；3.结构上可分隔开；4.易于实现和维护；5.能促进标准化工作 ATM:异步传输模式 组成网络协议的三要素是语义、语法、定时 五层体系结构的功能： 1.物理层：物理层的功能就是透明地传送比特流。 2.数据链路层：数据链路层的功能是在两个相邻结点间的线路上无差错地传送以帧为单位的数据。//传输单位：帧，最短为64字节 3.网络层：网络层的功能就是要选择合适的路由，使发送站的运输层所传下来的分组能够正确无误地按照地址找到目的站，并交付给目的站的运输层。 4.运输层：运输层的功能是向上一层的进行通信的两个进程之间提供一个可靠的端到端服务。//传输单位：报文段 5.应用层：应用层的功能直接为用户的应用进程提供服务。//传输单位：报文]]></content>
@@ -88,80 +47,6 @@
       </categories>
       <tags>
         <tag>安卓</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[XTU 1308 比赛]]></title>
-    <url>%2F2019%2F07%2F19%2FXTU-1308-%E6%AF%94%E8%B5%9B%2F</url>
-    <content type="text"><![CDATA[题目描述有n个人要进行比赛，比赛规则如下：假设每轮比赛的人是m，取最大的k，k=2t且k≤m。这k个人每2人举行一场比赛，胜利者进入一下轮，失败者被淘汰。余下的m-k个人，不进行比赛，直接进入下一轮直到决出冠军，比赛结束。比如有5个人参加比赛，第一轮举办2场，剩余3人进入第二轮，第二轮1场，剩余2人进入第三轮，第三轮举办1场决出冠军，所以一共要办4场比赛。 请问一共要举行几轮多少场比赛？ 输入第一行是一个整数K，表示样例的个数。 以后每行一个样例，为n(1≤n≤1000000000) 输出每行输出两个整数，轮数和比赛场数，中间用一个空格隔开。 样例输入2 1 5 样例输出0 0 3 4 思路：直接按题意模拟即可 1234567891011121314151617181920212223242526#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;int main() &#123; int T; scanf("%d", &amp;T); while (T--) &#123; ll n; scanf("%I64d", &amp;n); ll lun = 0, chang = 0; while (n &gt; 1) &#123; ll k = 1; while (k &lt;= n) &#123; //求k if (k * 2 &gt; n) break; k *= 2; &#125; n -= k; k /= 2; //场次 chang += k; lun++; n += k; &#125; printf("%I64d %I64d\n", lun, chang); &#125; system("pause");&#125;]]></content>
-      <categories>
-        <category>程序设计实践</category>
-      </categories>
-      <tags>
-        <tag>模拟</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[XTU 1296 GCD]]></title>
-    <url>%2F2019%2F07%2F19%2FXTU-1296-GCD%2F</url>
-    <content type="text"><![CDATA[题目描述a和b的最大公约数(Greatest Common Divisor)是最大的d，d能整除a和b。如果gcd(a,b)=1，我们就称a和b是互素的。 给一个区间[a,b]，求与6互素的数的个数。比如区间[1,10],与6互素的数为1,5,7,所以一共是3个。 输入第一行是一个整数K(K≤10,000)，表示样例的个数。每个样例占一行,为区间[a,b],(1≤a≤b≤1,000,000,000) 输出每行输出一个样例的结果 样例输入21 101 1000000000 样例输出3333333333 思路：容斥，与6互素就不会有和6一样的因子2,3，所以[l,r]区间的数减去2和3的倍数再加上6的倍数(计算2和3的倍数时多减了一次)即为答案，另外对于大数判断倍数遍历判断是肯定会超时的，有个思路就是就是 1 到 n 有多少个是 m 倍数，个数为 n/m。 1234567891011121314151617#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;ll a, b;int main() &#123; int k; scanf("%d", &amp;k); while (k--) &#123; scanf("%lld%lld", &amp;a, &amp;b); ll l = (b * 1.0 / 2) - (a - 1) * 1.0 / 2; ll r = (b * 1.0) / 3 - (a - 1) * 1.0 / 3; ll lr = b - a + 1; ll sum = (b * 1.0) / 6 - (a - 1) * 1.0 / 6; sum = lr - l - r + sum; printf("%lld\n", sum); &#125;&#125;]]></content>
-      <categories>
-        <category>程序设计实践</category>
-      </categories>
-      <tags>
-        <tag>容斥</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[XTU 1294 Enquiry]]></title>
-    <url>%2F2019%2F07%2F19%2FXTU-1294-Enquiry%2F</url>
-    <content type="text"><![CDATA[题目描述男女同学排成一列，你想知道第i个到第j个同学之间，男女相邻排列的出现次数。 输入第一行是一个整数K，表示样例的个数。每个样例的第一行是一个字符串s，其长度len不超过10000，只含字符M和F，M表示男生，F表示女生。每个样例的第二行是一个整数n(1≤n≤1000)，表示查询的次数。以后的N行,每行两个整数i,j(1≤i&lt;j≤len)，表示查询的区间。 输出每个样例的每次查询输出一个整数。 样例输入2MMMMM31 21 31 5MFMFM31 52 33 5 样例输出000412 思路：维护一个前缀和即可，pre[i]表示1…i有多少男女相邻的个数 12345678910111213141516171819202122232425262728#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;int n, pre[10005];//维护一个前缀和void presum(string str) &#123; memset(pre, 0, sizeof(pre)); pre[0] = 0; for (int i = 1; i &lt; str.length(); ++i) &#123; if (str[i - 1] != str[i]) pre[i] = 1; pre[i] = pre[i] + pre[i - 1]; &#125;&#125;int main() &#123; int k, a, b; scanf("%d", &amp;k); while (k--) &#123; string s; cin &gt;&gt; s; presum(s); scanf("%d", &amp;n); for (int i = 0; i &lt; n; ++i) &#123; scanf("%d%d", &amp;a, &amp;b); printf("%d\n", pre[b - 1] - pre[a - 1]); &#125; &#125; //system("pause");&#125;]]></content>
-      <categories>
-        <category>程序设计实践</category>
-      </categories>
-      <tags>
-        <tag>前缀和</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[XTU 1291 Buying Gifts]]></title>
-    <url>%2F2019%2F07%2F19%2FXTU-1291-Buying-Gifts%2F</url>
-    <content type="text"><![CDATA[题目描述快到年末了，Boss Liu准备在年会上发些礼物，由于不想礼物的价格区别太大，Boss Liu希望最好的礼物与最差的礼物价格相差越小越好。 当然，如果存在相同的选择，Boss Liu希望花的钱越少越好。Boss Liu把这个买礼物的任务给你，你决定写个程序来帮助自己计算一下。 输入第一行是一个整数K，表示样例的个数。每个样例的第一行是一个整数n,m(1≤m≤n≤1000)，分别表示可购买的礼物的个数和实际需要购买的个数。每个样例的第二行是n个整数xi,i=1,2,⋯,n(1≤xi≤100)，表示n个礼物的价格。 输出每个样例输出两个整数，分别表示最小的价差以及总的花费，中间用一个空格隔开。 样例输入25 310 5 9 7 25 110 5 9 7 2\ 样例输出3 260 2 线索第一个样例，购买10,9,7的礼物的差值最小为3，总花费是26。第二个样例，因为只买一样所以差值都是0，最小花费是2。 思路：将价格升序排序后以长度m尺取找出最小价格差即可，由于排好序所以总和肯定取之前的更小 123456789101112131415161718192021222324252627282930#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;int x[1005], n, m; //礼物的价格、可购买的个数、实际需要购买的次数int sum(int a) &#123; int ans = 0; for (int i = a; i &lt; m + a; ++i) ans += x[i]; return ans;&#125;int main() &#123; int k; scanf("%d", &amp;k); while (k--) &#123; memset(x, 0, sizeof(x)); scanf("%d%d", &amp;n, &amp;m); for (int i = 0; i &lt; n; ++i) scanf("%d", &amp;x[i]); sort(x, x + n); int minv = 100005, spend = 0; for (int i = 0; i &lt; n; ++i) &#123; if (x[m + i - 1] - x[i] &lt; minv) &#123; minv = x[m + i - 1] - x[i]; spend = sum(i); &#125; else if (x[m + i - 1] - x[i] == minv) &#123; spend = min(sum(i), spend); &#125; if (m + i - 1 == n - 1) break; &#125; printf("%d %d\n", minv, spend); &#125;&#125;]]></content>
-      <categories>
-        <category>程序设计实践</category>
-      </categories>
-      <tags>
-        <tag>尺取</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[XTU 1243 Bob's Password]]></title>
-    <url>%2F2019%2F07%2F19%2FXTU-1243-Bob-s-Password%2F</url>
-    <content type="text"><![CDATA[题目描述Bob最新购入一款安卓手机，他发现安卓手机密码使用的是画线方式。一共有9个点，我们按行列顺序依次为1~9。密码要求在点和点之间连线不能有还未曾经过的点。比如说：从1出发，可以到2，4，5，6，7，8，但是不能到达3，7，9。但是如果从2出发，先到1，这时因为2已经经过了，所以此时可以到达3。现在给你一个密码，请问它是否符合密码的这个要求？ 输入第一行是一个整数T(1≤T≤10000)，表示样例的个数。一个样例占一行，是一个最短为4位，最长9位，只含1-9的字符串，且1-9最多只有1个。 输出每个样例输出一行，如果合法输出“Yes”，否则输出“No”。 样例输入316852213132 样例输出YesYesNo 思路：首先用一个mp数组存储每个点到其它各点的状态，比如对1来说，1-&gt;1是自身不可访问，标记为-1，1-&gt;2可以访问，标记为0，1-&gt;3需要先经过2这个点，标记为2，即2这个点被访问，我们可以用访问数组进行标记，之后根据样例判断即可。 1234567891011121314151617181920212223242526272829303132#include &lt;bits/stdc++.h&gt;using namespace std;int mp[10][10] = &#123; &#123;-5, -5, -5, -5, -5, -5, -5, -5, -5, -5&#125;, &#123;-5, -1, 0, 2, 0, 0, 0, 4, 0, 5&#125;, &#123;-5, 0, -1, 0, 0, 0, 0, 0, 5, 0&#125;, &#123;-5, 2, 0, -1, 0, 0, 0, 5, 0, 6&#125;, &#123;-5, 0, 0, 0, -1, 0, 5, 0, 0, 0&#125;, &#123;-5, 0, 0, 0, 0, -1, 0, 0, 0, 0&#125;, &#123;-5, 0, 0, 0, 5, 0, -1, 0, 0, 0&#125;, &#123;-5, 4, 0, 5, 0, 0, 0, -1, 0, 8&#125;, &#123;-5, 0, 5, 0, 0, 0, 0, 0, -1, 0&#125;, &#123;-5, 5, 0, 6, 0, 0, 0, 8, 0, -1&#125;&#125;;int vis[10];int main() &#123; int t; scanf("%d", &amp;t); while (t--) &#123; memset(vis, 0, sizeof(vis)); string s; bool ok = true; cin &gt;&gt; s; vis[s[0] - '0'] = 1; for (int i = 1; i &lt; s.length(); ++i) &#123; if (mp[s[i - 1] - '0'][s[i] - '0'] == 0 ||vis[mp[s[i - 1] - '0'][s[i] - '0']]) &#123; vis[s[i] - '0'] = 1; ok = true; &#125; else &#123; ok = false; break; &#125; &#125; if (ok) cout &lt;&lt; "Yes" &lt;&lt; endl; else cout &lt;&lt; "No" &lt;&lt; endl; &#125; // system("pause");&#125;]]></content>
-      <categories>
-        <category>程序设计实践</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[PAT 1039 到底买不买]]></title>
-    <url>%2F2019%2F07%2F19%2FPAT-1039-%E5%88%B0%E5%BA%95%E4%B9%B0%E4%B8%8D%E4%B9%B0%2F</url>
-    <content type="text"><![CDATA[题目小红想买些珠子做一串自己喜欢的珠串。卖珠子的摊主有很多串五颜六色的珠串，但是不肯把任何一串拆散了卖。于是小红要你帮忙判断一下，某串珠子里是否包含了全部自己想要的珠子？如果是，那么告诉她有多少多余的珠子；如果不是，那么告诉她缺了多少珠子。 为方便起见，我们用[0-9]、[a-z]、[A-Z]范围内的字符来表示颜色。例如在图1中，第3串是小红想做的珠串；那么第1串可以买，因为包含了全部她想要的珠子，还多了8颗不需要的珠子；第2串不能买，因为没有黑色珠子，并且少了一颗红色的珠子。 输入格式：每个输入包含 1 个测试用例。每个测试用例分别在 2 行中先后给出摊主的珠串和小红想做的珠串，两串都不超过 1000 个珠子。 输出格式：如果可以买，则在一行中输出 Yes 以及有多少多余的珠子；如果不可以买，则在一行中输出 No 以及缺了多少珠子。其间以 1 个空格分隔。 输入样例 1：ppRYYGrrYBR2258YrR8RrY 输出样例 1：Yes 8 输入样例 2：ppRYYGrrYB225YrR8RrY 输出样例 2：No 2 思路：用两个数组分别存储摊主的珠串的个数以及小红想做的珠串的个数，我这里是把[0-9]、[a-z]、[A-Z]都转成数字，方便用数组统计，之后判断如果man[i]&gt;shop[i]，那么就是no，缺少的个数是sum += man[i] + shop[i]，反之若是yes，多余的个数就是sum += shop[i] - man[i]。 1234567891011121314151617181920212223242526272829303132333435363738#include &lt;bits/stdc++.h&gt;using namespace std;int shop[65], man[65];int main() &#123; string s1, s2; cin &gt;&gt; s1 &gt;&gt; s2; bool ok = true; for (int i = 0; i &lt; s1.length(); ++i) &#123; if (s1[i] &lt;= 'z' &amp;&amp; s1[i] &gt;= 'a') shop[s1[i] - 'a' + 10]++; else if (s1[i] &lt;= 'Z' &amp;&amp; s1[i] &gt;= 'A') shop[s1[i] - 'A' + 36]++; else shop[s1[i] - '0']++; &#125; for (int i = 0; i &lt; s2.length(); ++i) &#123; if (s2[i] &lt;= 'z' &amp;&amp; s2[i] &gt;= 'a') man[s2[i] - 'a' + 10]++; else if (s2[i] &lt;= 'Z' &amp;&amp; s2[i] &gt;= 'A') man[s2[i] - 'A' + 36]++; else man[s2[i] - '0']++; &#125; int sum = 0; for (int i = 0; i &lt; 62; ++i) &#123; if (man[i] &gt; shop[i]) ok = false; &#125; if (ok) &#123; for (int i = 0; i &lt; 62; ++i) sum += shop[i] - man[i]; cout &lt;&lt; "Yes " &lt;&lt; sum &lt;&lt; endl; &#125; else &#123; for (int i = 0; i &lt; 62; ++i) &#123; if (shop[i] &lt; man[i]) sum += man[i] - shop[i]; &#125; cout &lt;&lt; "No " &lt;&lt; sum &lt;&lt; endl; &#125; system("pause");&#125;]]></content>
-      <categories>
-        <category>PAT</category>
-      </categories>
-      <tags>
-        <tag>模拟</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[XTU 1271 Color]]></title>
-    <url>%2F2019%2F07%2F19%2FXTU-1271-Color%2F</url>
-    <content type="text"><![CDATA[题目Alice在玩一个游戏，她在一个m×n的格子里，随机涂黑k个格子。然后她每次可以把一行或者一列的格子染成红色，但是这一行中不能有黑色的格子。 请问她最多能把多少个格子涂成红色？ 输入第一行是一个整数T(T≤100)，表示样例的个数。 每个样例的第一行是m(1≤m≤100),n(1≤n≤100),k(0≤k≤m×n)。 以后的k行,每行两个整数x(1≤x≤m),y(1≤y≤n)，表示(x,y)为黑色格子。 输出每行输出一个样例的结果。 样例输入13 4 21 13 3 样例输出8 思路：首先根据x y统计有哪几行哪几列有黑色格子，用row和col数组存储，再对二者遍历可得全为红格子的行数以及红格子的列数，用r和c表示，那么我们可以推出公式ans = r * n + c * m - r * c; 1234567891011121314151617181920212223242526272829#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;string.h&gt;typedef long long ll;int row[105], col[105];int main() &#123; int T, m, n, k, x, y; scanf("%d", &amp;T); while (T--) &#123; memset(row, 0, sizeof(row)); memset(col, 0, sizeof(col)); scanf("%d%d%d", &amp;m, &amp;n, &amp;k); while (k--) &#123; scanf("%d%d", &amp;x, &amp;y); row[x - 1] = 1; col[y - 1] = 1; &#125; int r = 0, c = 0; for (int i = 0; i &lt; m; ++i) &#123; if (!row[i]) r++; &#125; for (int i = 0; i &lt; n; ++i) &#123; if (!col[i]) c++; &#125; ll ans = r * n + c * m - r * c; printf("%lld\n", ans); &#125; //system("pause");&#125;]]></content>
-      <categories>
-        <category>程序设计实践</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
