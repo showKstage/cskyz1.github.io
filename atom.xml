@@ -95,15 +95,15 @@
   </entry>
   
   <entry>
-    <title>PAT 1050 螺旋矩阵</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-螺旋矩阵/</id>
+    <title>PAT 1049 数列的片段和</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1049-%E6%95%B0%E5%88%97%E7%9A%84%E7%89%87%E6%AE%B5%E5%92%8C/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1049-数列的片段和/</id>
     <published>2019-07-23T09:18:00.000Z</published>
-    <updated>2019-07-23T13:43:50.956Z</updated>
+    <updated>2019-07-23T09:25:51.476Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;本题要求将给定的 N 个正整数按非递增的顺序，填入“螺旋矩阵”。所谓“螺旋矩阵”，是指从左上角第 1 个格子开始，按顺时针螺旋方向填充。要求矩阵的规模为 m 行 n 列，
+      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;给定一个正数数列，我们可以从中截取任意的连续的几个数，称为片段。例如，给定数列 { 0.1, 0.2, 0.3, 0.4 }，我们有 (0.1) (0.1, 0.2) (0.1, 0.2, 0.3) (0.1, 0.2, 0.3, 0.4) (0.2) (0.2, 0.3) (0.2, 0.3, 0.4) (0.3) (0.3, 0.4) (0.4) 这 10 个片段。&lt;/p&gt;
     
     </summary>
     
@@ -115,15 +115,15 @@
   </entry>
   
   <entry>
-    <title>PAT 1049 数列的片段和</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1049-%E6%95%B0%E5%88%97%E7%9A%84%E7%89%87%E6%AE%B5%E5%92%8C/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1049-数列的片段和/</id>
+    <title>PAT 1050 螺旋矩阵</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/23/PAT-1050-螺旋矩阵/</id>
     <published>2019-07-23T09:18:00.000Z</published>
-    <updated>2019-07-23T09:25:51.476Z</updated>
+    <updated>2019-07-23T13:43:50.956Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;给定一个正数数列，我们可以从中截取任意的连续的几个数，称为片段。例如，给定数列 { 0.1, 0.2, 0.3, 0.4 }，我们有 (0.1) (0.1, 0.2) (0.1, 0.2, 0.3) (0.1, 0.2, 0.3, 0.4) (0.2) (0.2, 0.3) (0.2, 0.3, 0.4) (0.3) (0.3, 0.4) (0.4) 这 10 个片段。&lt;/p&gt;
+      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;本题要求将给定的 N 个正整数按非递增的顺序，填入“螺旋矩阵”。所谓“螺旋矩阵”，是指从左上角第 1 个格子开始，按顺时针螺旋方向填充。要求矩阵的规模为 m 行 n 列，
     
     </summary>
     
