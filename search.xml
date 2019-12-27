@@ -1,30 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Welcome2]]></title>
-    <url>%2F2019%2F12%2F27%2FWelcome2%2F</url>
-    <content type="text"><![CDATA[这是我的第三篇博客，欢迎~]]></content>
-      <categories>
-        <category>个人相关</category>
-      </categories>
-      <tags>
-        <tag>个人</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Welcome1]]></title>
-    <url>%2F2019%2F12%2F27%2FWelcome1%2F</url>
-    <content type="text"><![CDATA[这是我的第二篇博客，欢迎~]]></content>
-      <categories>
-        <category>个人相关</category>
-      </categories>
-      <tags>
-        <tag>个人</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Welcome]]></title>
-    <url>%2F2019%2F12%2F27%2FWelcome0%2F</url>
+    <url>%2F2019%2F12%2F27%2FWelcome%2F</url>
     <content type="text"><![CDATA[这是我的第一篇博客，欢迎~]]></content>
       <categories>
         <category>个人相关</category>
