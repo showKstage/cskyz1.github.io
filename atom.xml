@@ -6,133 +6,38 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-12-01T13:47:35.741Z</updated>
+  <updated>2019-12-27T06:31:38.114Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
-    <name>showKstage</name>
+    <name>kyz</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>TCP/IP网络编程 学习笔记</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-IP%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/11/29/TCP-IP网络编程-学习笔记/</id>
-    <published>2019-11-29T14:33:19.000Z</published>
-    <updated>2019-12-01T13:47:35.741Z</updated>
+    <title>Welcome</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome/</id>
+    <published>2019-12-27T06:25:43.000Z</published>
+    <updated>2019-12-27T06:31:38.114Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;《TCP-IP网络编程》学习笔记&quot;&gt;&lt;a href=&quot;#《TCP-IP网络编程》学习笔记&quot; class=&quot;headerlink&quot; title=&quot;《TCP/IP网络编程》学习笔记&quot;&gt;&lt;/a&gt;《TCP/IP网络编程》学习笔记&lt;/h1&gt;&lt;p&gt;:flags: 转自《TCP/IP网络编程》&lt;/p&gt;
-&lt;h2 id=&quot;第-1-章：理解网络编程和套接字&quot;&gt;&lt;a href=&quot;#第-1-章：理解网络编程和套接字&quot; class=&quot;headerlink&quot; title=&quot;第 1 章：理解网络编程和套接字&quot;&gt;&lt;/a&gt;第 1 章：理解网络编程和套接字
+      
+      
+        
+        
+          &lt;p&gt;这是我的第一篇博客，&amp;lt;&amp;gt;欢迎~&lt;/p&gt;
+
+        
+      
     
     </summary>
     
     
-      <category term="TCP/IP" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/TCP-IP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT (Basic Level) Practice</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/08/05/PAT-Basic-Level-Practice/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/08/05/PAT-Basic-Level-Practice/</id>
-    <published>2019-08-05T09:20:41.000Z</published>
-    <updated>2019-08-15T09:56:03.878Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;下半年会陆续考乙级和甲级，今天刚刷完乙级的所有题目，想着来总结一下，觉着一个一个分开写太麻烦，于是就这篇博客将所有题目放在一起进行总结。
-    
-    </summary>
-    
-      <category term="PAT" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/PAT/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>计算机网络 学习笔记</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/20/计算机网络-学习笔记/</id>
-    <published>2019-07-20T02:35:53.000Z</published>
-    <updated>2019-07-20T02:59:02.001Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot; title=&quot;一、概述&quot;&gt;&lt;/a&gt;一、概述&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;三网：电信网络，有线电视网络，计算机网络&lt;/li&gt;
-&lt;li&gt;Internet：因特网 internet：互联网/互连网&lt;/li&gt;
-&lt;li&gt;在网络核心部分起特殊作用的是路由器，路由器转发收到的分组就是实现分组交换。
-    
-    </summary>
-    
-      <category term="专业课相关" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%9B%B8%E5%85%B3/"/>
-    
-    
-      <category term="计算机网络" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数值分析 学习笔记</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/20/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/20/数值分析-学习笔记/</id>
-    <published>2019-07-20T01:48:58.000Z</published>
-    <updated>2019-07-21T03:33:19.708Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Chapter-1-误差&quot;&gt;&lt;a href=&quot;#Chapter-1-误差&quot; class=&quot;headerlink&quot; title=&quot;Chapter 1 误差&quot;&gt;&lt;/a&gt;Chapter 1 误差&lt;/h2&gt;&lt;p&gt;误差：模型误差，观测误差，截断误差(方法误差)，舍入误差//前两种不可避免&lt;br&gt;总误差＝截断误差＋舍入误差\&lt;br&gt;由于相对误差可以很大，因此“应避免两个相近的数作减法”，以防止有效数字丢失。//所以遇到分式减法需要优化就通分，例1.4
-    
-    </summary>
-    
-      <category term="专业课相关" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%9B%B8%E5%85%B3/"/>
-    
-    
-      <category term="数值分析" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>安卓入门 学习笔记</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/%E5%AE%89%E5%8D%93%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/安卓入门-学习笔记/</id>
-    <published>2019-07-19T07:52:41.000Z</published>
-    <updated>2019-07-21T03:41:27.540Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;JDK-android-studio安装&quot;&gt;&lt;a href=&quot;#JDK-android-studio安装&quot; class=&quot;headerlink&quot; title=&quot;JDK + android studio安装&quot;&gt;&lt;/a&gt;JDK + android studio安装&lt;/h2&gt;&lt;p&gt;JDK和环境变量的配置；最新的android studio要求至少JDK1.8以上&lt;br&gt;去官网下载最新版本的android studio；&lt;br&gt;SDK可以下载android studio之后去settings里下载；&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="安卓学习" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E5%AE%89%E5%8D%93%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="安卓" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E5%AE%89%E5%8D%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XTU 1262 Fish(优先队列+贪心)</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1262-Fish-%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97-%E8%B4%AA%E5%BF%83/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/07/19/XTU-1262-Fish-优先队列-贪心/</id>
-    <published>2019-07-19T05:45:17.000Z</published>
-    <updated>2019-07-19T07:40:26.859Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h3&gt;&lt;p&gt;小明很喜欢钓鱼，现在有n个池塘可以钓鱼，第i个池塘首次内能钓到ai条鱼。 第i个池塘如果被钓过k次，那么每次下一次能钓到的鱼的数目为max{0,ai−k×bi}。现在小明能钓m次鱼，请问他最多能钓到多少条鱼？&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="程序设计实践" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-      <category term="贪心" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E8%B4%AA%E5%BF%83/"/>
+      <category term="个人相关" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/"/>
     
   </entry>
   
