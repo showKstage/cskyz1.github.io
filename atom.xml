@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/showKstage/showKstage.github.io.git/"/>
-  <updated>2019-12-27T06:31:38.114Z</updated>
+  <updated>2019-12-27T06:39:35.845Z</updated>
   <id>https://github.com/showKstage/showKstage.github.io.git/</id>
   
   <author>
@@ -17,27 +17,62 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Welcome</title>
-    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome/"/>
-    <id>https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome/</id>
-    <published>2019-12-27T06:25:43.000Z</published>
-    <updated>2019-12-27T06:31:38.114Z</updated>
+    <title>Welcome2</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome2/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome2/</id>
+    <published>2019-12-27T06:38:10.000Z</published>
+    <updated>2019-12-27T06:39:35.845Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;这是我的第一篇博客，&amp;lt;&amp;gt;欢迎~&lt;/p&gt;
-
-        
-      
+      &lt;p&gt;这是我的第三篇博客，
     
     </summary>
     
+      <category term="个人相关" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/"/>
     
-      <category term="个人相关" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/"/>
+    
+      <category term="个人" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E4%B8%AA%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Welcome1</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome1/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome1/</id>
+    <published>2019-12-27T06:38:03.000Z</published>
+    <updated>2019-12-27T06:39:40.487Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是我的第二篇博客，
+    
+    </summary>
+    
+      <category term="个人相关" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/"/>
+    
+    
+      <category term="个人" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E4%B8%AA%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome0/"/>
+    <id>https://github.com/showKstage/showKstage.github.io.git/2019/12/27/Welcome0/</id>
+    <published>2019-12-27T06:25:43.000Z</published>
+    <updated>2019-12-27T06:39:12.512Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是我的第一篇博客，
+    
+    </summary>
+    
+      <category term="个人相关" scheme="https://github.com/showKstage/showKstage.github.io.git/categories/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/"/>
+    
+    
+      <category term="个人" scheme="https://github.com/showKstage/showKstage.github.io.git/tags/%E4%B8%AA%E4%BA%BA/"/>
     
   </entry>
   
